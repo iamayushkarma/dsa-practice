@@ -1,11 +1,19 @@
 package arrays;
 
+import java.util.*;
+
 public class EasyArrayProblems {
     // helper function
     static void displayArray(int[] arr) {
         for (var value : arr) {
             System.out.print(value + " ");
         }
+    }
+
+    static void numberSwap(int[] arr, int value1, int value2) {
+        int temp = arr[value1];
+        arr[value1] = arr[value2];
+        arr[value2] = temp;
     }
 
     static void swap(int[] arr, int start, int end) {
@@ -476,10 +484,10 @@ public class EasyArrayProblems {
         int idx = 1;
         for (int i = 1; i < nums.length; i++) {
             if (nums[i - 1] != nums[i]) {
-                nums[idx] = nums[i];
-                idx++;
+                nums[idx++] = nums[i];
             }
         }
+
         return idx;
     }
 
@@ -523,8 +531,16 @@ public class EasyArrayProblems {
      * Input: nums = [0, 0, 1]
      * Output: [1, 0, 0]
      */
-    public int[] moveZeros(int[] nums) {
-        // Your code here
+    static public int[] moveZeros(int[] nums) {
+        int idx = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != 0) {
+                if (i != idx) {
+                    numberSwap(nums, i, idx);
+                }
+                idx++;
+            }
+        }
         return nums;
     }
 
@@ -545,9 +561,24 @@ public class EasyArrayProblems {
      * Output: 1
      * Explanation: Numbers 1 to 5 should be present, 1 is missing
      */
-    // static public int findMissing(int[] nums) {
+    static public int findMissing(int[] nums) {
+        // int sum = 0;
+        // for (int num : nums) {
+        // sum += num;
+        // }
+        // int n = nums.length + 1;
+        // int totalSum = (n * (n + 1)) / 2;
+        // return totalSum - sum;
 
-    // }
+        int xor = 0;
+        for (int i = 1; i <= nums.length + 1; i++) {
+            xor ^= i;
+        }
+        for (int num : nums) {
+            xor ^= num;
+        }
+        return xor;
+    }
 
     /**
      * Question 22: Check if Array Contains Duplicates
@@ -564,8 +595,14 @@ public class EasyArrayProblems {
      * Input: nums = [1, 2, 3, 4]
      * Output: false
      */
-    public boolean containsDuplicate(int[] nums) {
-        // Your code here
+    static public boolean containsDuplicate(int[] nums) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);
+            if (map.get(nums[i]) > 1) {
+                return true;
+            }
+        }
         return false;
     }
 
@@ -584,9 +621,20 @@ public class EasyArrayProblems {
      * Input: nums = [1, 2, 3, 4]
      * Output: false
      */
-    public boolean isPalindrome(int[] nums) {
-        // Your code here
-        return false;
+    static public boolean isPalindrome(int[] nums) {
+        int i = 0;
+        int j = nums.length - 1;
+        while (i < j) {
+            if (nums[i] != nums[j]) {
+                return false;
+            }
+            i++;
+            j--;
+        }
+        return true;
+
+        // int[] revArray = Arrays.copyOf(nums, nums.length);
+        // return Arrays.equals(reverseArray(revArray), nums);
     }
 
     /**
@@ -605,9 +653,12 @@ public class EasyArrayProblems {
      * Input: nums = [1, 1, 2, 2, 3]
      * Output: 3
      */
-    public int findSingleNonDuplicate(int[] nums) {
-        // Your code here
-        return 0;
+    static public int findSingleNonDuplicate(int[] nums) {
+        int xor = 0;
+        for (int i = 0; i < nums.length; i++) {
+            xor ^= nums[i];
+        }
+        return xor;
     }
 
     /**
@@ -625,9 +676,26 @@ public class EasyArrayProblems {
      * Input: nums1 = [1, 2], nums2 = [3, 4]
      * Output: [1, 2, 3, 4]
      */
-    public int[] mergeSortedArrays(int[] nums1, int[] nums2) {
-        // Your code here
-        return new int[0];
+    static public int[] mergeSortedArrays(int[] nums1, int[] nums2) {
+        int n = nums1.length;
+        int m = nums2.length;
+        int[] meargedArray = new int[n + m];
+        int idx = 0;
+        int i = 0, j = 0;
+        while (i < n && j < m) {
+            if (nums1[i] <= nums2[j]) {
+                meargedArray[idx++] = nums1[i++];
+            } else if (nums1[i] > nums2[j]) {
+                meargedArray[idx++] = nums2[j++];
+            }
+        }
+        while (i < n) {
+            meargedArray[idx++] = nums1[i++];
+        }
+        while (j < m) {
+            meargedArray[idx++] = nums2[j++];
+        }
+        return meargedArray;
     }
 
     /**
@@ -646,7 +714,7 @@ public class EasyArrayProblems {
      * Output: 4
      */
     public int kthLargest(int[] nums, int k) {
-        // Your code here
+
         return 0;
     }
 
@@ -834,8 +902,7 @@ public class EasyArrayProblems {
 
         // Q18
         System.out.print("Q18 -->");
-        // int[] nums18 = { 1, 1, 2, 3, 3, 4, 4, 5, 5 };
-        int[] nums18 = { 1, 1, 1, 1, 1 };
+        int[] nums18 = { 1, 1, 2, 2, 3, 4, 4, 5 };
         System.out.println(" Length after duplicates removed: " + removeDuplicates(nums18));
 
         // Q19
@@ -845,6 +912,43 @@ public class EasyArrayProblems {
         System.out.print(" Array rotated " + k + " times : ");
         int[] rotatedArray = rotateLeftByK(nums19, k);
         displayArray(rotatedArray);
+        System.out.println();
+
+        // Q20
+        System.out.print("Q20 -->");
+        int[] nums20 = { 0, 0, 1, 2, 0, 3, 0 };
+        System.out.print(" Modified array is: ");
+        int[] modifiedArray = moveZeros(nums20);
+        displayArray(modifiedArray);
+        System.out.println();
+
+        // Q21
+        System.out.print("Q21 -->");
+        int[] nums21 = { 1, 2, 3, 4, 5, 7 };
+        System.out.println(" Missing number is : " + findMissing(nums21));
+
+        // Q22
+        System.out.print("Q22 -->");
+        int[] nums22 = { 3, 1, 4, 2, 2 };
+        System.out.println(" Does array contains duplicate values: " + containsDuplicate(nums22));
+
+        // Q23
+        System.out.print("Q23 -->");
+        int[] nums23 = { 1, 2, 3, 2, 1 };
+        System.out.println(" Is array palindrome: " + isPalindrome(nums23));
+
+        // Q24
+        System.out.print("Q24 -->");
+        int[] nums24 = { 1, 2, 3, 2, 1, 3, 21 };
+        System.out.println(" Single non duplicate value is: " + findSingleNonDuplicate(nums24));
+
+        // Q25
+        System.out.print("Q25 -->");
+        int[] nums25_1 = { 1, 2, 3 };
+        int[] nums25_2 = { 4, 5 };
+        System.out.print(" Modified array is: ");
+        int[] mergeArrays = mergeSortedArrays(nums25_1, nums25_2);
+        displayArray(mergeArrays);
         System.out.println();
     }
 }
