@@ -1,0 +1,603 @@
+package arrays;
+
+public class MediumArrayProblems {
+    // MEDIUM QUESTIONS (1-30)
+
+    /**
+     * Question 1: Two Sum
+     * Difficulty: Medium
+     * 
+     * Given an integer array nums and a target sum, return indices of two numbers
+     * that add up to the target. You may assume each input has exactly one
+     * solution.
+     * 
+     * Example 1:
+     * Input: nums = [2, 7, 11, 15], target = 9
+     * Output: [0, 1]
+     * Explanation: nums[0] + nums[1] = 2 + 7 = 9
+     * 
+     * Example 2:
+     * Input: nums = [3, 2, 4], target = 6
+     * Output: [1, 2]
+     */
+    static public int[] twoSum(int[] nums, int target) {
+        // Your code here
+        return new int[] {};
+    }
+
+    /**
+     * Question 2: Three Sum Zero
+     * Difficulty: Medium
+     * 
+     * Given an integer array nums, find all unique triplets that sum to zero.
+     * Return the count of such triplets.
+     * 
+     * Example 1:
+     * Input: nums = [-1, 0, 1, 2, -1, -4]
+     * Output: 2
+     * Explanation: Triplets are [-1, -1, 2] and [-1, 0, 1]
+     * 
+     * Example 2:
+     * Input: nums = [0, 0, 0]
+     * Output: 1
+     * Explanation: Only triplet is [0, 0, 0]
+     */
+    static public int threeSumZero(int[] nums) {
+        // Your code here
+        return 0;
+    }
+
+    /**
+     * Question 3: Product of Array Except Self
+     * Difficulty: Medium
+     * 
+     * Return an array where each element is the product of all elements
+     * except itself. Do not use division.
+     * 
+     * Example 1:
+     * Input: nums = [1, 2, 3, 4]
+     * Output: [24, 12, 8, 6]
+     * 
+     * Example 2:
+     * Input: nums = [-1, 1, 0, -3, 3]
+     * Output: [0, 0, 9, 0, 0]
+     */
+    static public int[] productExceptSelf(int[] nums) {
+        // Your code here
+        return new int[] {};
+    }
+
+    /**
+     * Question 4: Container With Most Water
+     * Difficulty: Medium
+     * 
+     * Find two lines that together with x-axis form a container with most water.
+     * Return the maximum area.
+     * 
+     * Example 1:
+     * Input: height = [1, 8, 6, 2, 5, 4, 8, 3, 7]
+     * Output: 49
+     * Explanation: Max area = min(8, 7) * (8 - 1) = 49
+     * 
+     * Example 2:
+     * Input: height = [1, 1]
+     * Output: 1
+     */
+    static public int maxArea(int[] height) {
+        // Your code here
+        return 0;
+    }
+
+    /**
+     * Question 5: Rotate Array Right by K
+     * Difficulty: Medium
+     * 
+     * Rotate an array to the right by k steps in-place.
+     * 
+     * Example 1:
+     * Input: nums = [1, 2, 3, 4, 5, 6, 7], k = 3
+     * Output: [5, 6, 7, 1, 2, 3, 4]
+     * 
+     * Example 2:
+     * Input: nums = [-1, -100, 3, 99], k = 2
+     * Output: [3, 99, -1, -100]
+     */
+    static public void rotateRight(int[] nums, int k) {
+        // Your code here
+    }
+
+    /**
+     * Question 6: Find All Duplicates
+     * Difficulty: Medium
+     * 
+     * Given an array where 1 ≤ nums[i] ≤ n, some elements appear twice.
+     * Find all elements that appear twice and return them in an array.
+     * 
+     * Example 1:
+     * Input: nums = [4, 3, 2, 7, 8, 2, 3, 1]
+     * Output: [2, 3]
+     * 
+     * Example 2:
+     * Input: nums = [1, 1, 2]
+     * Output: [1]
+     */
+    static public int[] findDuplicates(int[] nums) {
+        // Your code here
+        return new int[] {};
+    }
+
+    /**
+     * Question 7: Maximum Subarray Sum (Kadane's Algorithm)
+     * Difficulty: Medium
+     * 
+     * Find the contiguous subarray with the largest sum and return its sum.
+     * 
+     * Example 1:
+     * Input: nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+     * Output: 6
+     * Explanation: [4, -1, 2, 1] has the largest sum = 6
+     * 
+     * Example 2:
+     * Input: nums = [1]
+     * Output: 1
+     */
+    static public int maxSubarraySum(int[] nums) {
+        // Your code here
+        return 0;
+    }
+
+    /**
+     * Question 8: Sort Colors (Dutch National Flag)
+     * Difficulty: Medium
+     * 
+     * Given an array with values 0, 1, and 2, sort it in-place.
+     * 
+     * Example 1:
+     * Input: nums = [2, 0, 2, 1, 1, 0]
+     * Output: [0, 0, 1, 1, 2, 2]
+     * 
+     * Example 2:
+     * Input: nums = [2, 0, 1]
+     * Output: [0, 1, 2]
+     */
+    static public void sortColors(int[] nums) {
+        // Your code here
+    }
+
+    /**
+     * Question 9: Find Peak Element
+     * Difficulty: Medium
+     * 
+     * Find a peak element (greater than neighbors) and return its index.
+     * Use binary search for O(log n) solution.
+     * 
+     * Example 1:
+     * Input: nums = [1, 2, 3, 1]
+     * Output: 2
+     * 
+     * Example 2:
+     * Input: nums = [1, 2, 1, 3, 5, 6, 4]
+     * Output: 5
+     */
+    static public int findPeakElement(int[] nums) {
+        // Your code here
+        return 0;
+    }
+
+    /**
+     * Question 10: Search in Rotated Sorted Array
+     * Difficulty: Medium
+     * 
+     * Search for a target in a rotated sorted array. Return its index or -1.
+     * 
+     * Example 1:
+     * Input: nums = [4, 5, 6, 7, 0, 1, 2], target = 0
+     * Output: 4
+     * 
+     * Example 2:
+     * Input: nums = [4, 5, 6, 7, 0, 1, 2], target = 3
+     * Output: -1
+     */
+    static public int searchRotated(int[] nums, int target) {
+        // Your code here
+        return -1;
+    }
+
+    /**
+     * Question 11: Find Minimum in Rotated Sorted Array
+     * Difficulty: Medium
+     * 
+     * Find the minimum element in a rotated sorted array.
+     * 
+     * Example 1:
+     * Input: nums = [3, 4, 5, 1, 2]
+     * Output: 1
+     * 
+     * Example 2:
+     * Input: nums = [4, 5, 6, 7, 0, 1, 2]
+     * Output: 0
+     */
+    static public int findMin(int[] nums) {
+        // Your code here
+        return 0;
+    }
+
+    /**
+     * Question 12: Next Permutation
+     * Difficulty: Medium
+     * 
+     * Rearrange array to its next lexicographically greater permutation.
+     * If not possible, arrange in ascending order.
+     * 
+     * Example 1:
+     * Input: nums = [1, 2, 3]
+     * Output: [1, 3, 2]
+     * 
+     * Example 2:
+     * Input: nums = [3, 2, 1]
+     * Output: [1, 2, 3]
+     */
+    static public void nextPermutation(int[] nums) {
+        // Your code here
+    }
+
+    /**
+     * Question 13: Subarray Sum Equals K
+     * Difficulty: Medium
+     * 
+     * Find the total number of continuous subarrays whose sum equals k.
+     * 
+     * Example 1:
+     * Input: nums = [1, 1, 1], k = 2
+     * Output: 2
+     * Explanation: Subarrays [1, 1] appear twice
+     * 
+     * Example 2:
+     * Input: nums = [1, 2, 3], k = 3
+     * Output: 2
+     * Explanation: Subarrays [1, 2] and [3]
+     */
+    static public int subarraySum(int[] nums, int k) {
+        // Your code here
+        return 0;
+    }
+
+    /**
+     * Question 14: Find First and Last Position
+     * Difficulty: Medium
+     * 
+     * Find the starting and ending position of a target value in sorted array.
+     * Return [-1, -1] if target not found.
+     * 
+     * Example 1:
+     * Input: nums = [5, 7, 7, 8, 8, 10], target = 8
+     * Output: [3, 4]
+     * 
+     * Example 2:
+     * Input: nums = [5, 7, 7, 8, 8, 10], target = 6
+     * Output: [-1, -1]
+     */
+    static public int[] searchRange(int[] nums, int target) {
+        // Your code here
+        return new int[] { -1, -1 };
+    }
+
+    /**
+     * Question 15: Longest Consecutive Sequence
+     * Difficulty: Medium
+     * 
+     * Find the length of the longest consecutive elements sequence.
+     * 
+     * Example 1:
+     * Input: nums = [100, 4, 200, 1, 3, 2]
+     * Output: 4
+     * Explanation: Sequence is [1, 2, 3, 4]
+     * 
+     * Example 2:
+     * Input: nums = [0, 3, 7, 2, 5, 8, 4, 6, 0, 1]
+     * Output: 9
+     */
+    static public int longestConsecutive(int[] nums) {
+        // Your code here
+        return 0;
+    }
+
+    /**
+     * Question 16: Set Matrix Zeros
+     * Difficulty: Medium
+     * 
+     * Given m x n matrix, if an element is 0, set its entire row and column to 0.
+     * Do it in-place.
+     * 
+     * Example 1:
+     * Input: matrix = [[1,1,1],[1,0,1],[1,1,1]]
+     * Output: [[1,0,1],[0,0,0],[1,0,1]]
+     * 
+     * Example 2:
+     * Input: matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]]
+     * Output: [[0,0,0,0],[0,4,5,0],[0,3,1,0]]
+     */
+    static public void setZeroes(int[][] matrix) {
+        // Your code here
+    }
+
+    /**
+     * Question 17: Spiral Matrix
+     * Difficulty: Medium
+     * 
+     * Given m x n matrix, return all elements in spiral order.
+     * 
+     * Example 1:
+     * Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]
+     * Output: [1,2,3,6,9,8,7,4,5]
+     * 
+     * Example 2:
+     * Input: matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
+     * Output: [1,2,3,4,8,12,11,10,9,5,6,7]
+     */
+    static public int[] spiralOrder(int[][] matrix) {
+        // Your code here
+        return new int[] {};
+    }
+
+    /**
+     * Question 18: Rotate Matrix 90 Degrees
+     * Difficulty: Medium
+     * 
+     * Rotate the n x n matrix 90 degrees clockwise in-place.
+     * 
+     * Example 1:
+     * Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]
+     * Output: [[7,4,1],[8,5,2],[9,6,3]]
+     * 
+     * Example 2:
+     * Input: matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]
+     * Output: [[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]
+     */
+    static public void rotateMatrix(int[][] matrix) {
+        // Your code here
+    }
+
+    /**
+     * Question 19: Valid Sudoku
+     * Difficulty: Medium
+     * 
+     * Determine if a 9x9 Sudoku board is valid (partially filled).
+     * 
+     * Example 1:
+     * Input: board with some numbers filled
+     * Output: true
+     * 
+     * Example 2:
+     * Input: board with invalid placement
+     * Output: false
+     */
+    static public boolean isValidSudoku(char[][] board) {
+        // Your code here
+        return false;
+    }
+
+    /**
+     * Question 20: Jump Game
+     * Difficulty: Medium
+     * 
+     * Given array where nums[i] is max jump length from position i,
+     * determine if you can reach the last index.
+     * 
+     * Example 1:
+     * Input: nums = [2, 3, 1, 1, 4]
+     * Output: true
+     * Explanation: Jump 1 step to index 1, then 3 steps to last index
+     * 
+     * Example 2:
+     * Input: nums = [3, 2, 1, 0, 4]
+     * Output: false
+     */
+    static public boolean canJump(int[] nums) {
+        // Your code here
+        return false;
+    }
+
+    /**
+     * Question 21: Merge Intervals
+     * Difficulty: Medium
+     * 
+     * Given array of intervals, merge all overlapping intervals.
+     * 
+     * Example 1:
+     * Input: intervals = [[1,3],[2,6],[8,10],[15,18]]
+     * Output: [[1,6],[8,10],[15,18]]
+     * 
+     * Example 2:
+     * Input: intervals = [[1,4],[4,5]]
+     * Output: [[1,5]]
+     */
+    static public int[][] mergeIntervals(int[][] intervals) {
+        // Your code here
+        return new int[][] {};
+    }
+
+    /**
+     * Question 22: Insert Interval
+     * Difficulty: Medium
+     * 
+     * Insert a new interval into sorted non-overlapping intervals and merge if
+     * needed.
+     * 
+     * Example 1:
+     * Input: intervals = [[1,3],[6,9]], newInterval = [2,5]
+     * Output: [[1,5],[6,9]]
+     * 
+     * Example 2:
+     * Input: intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]], newInterval = [4,8]
+     * Output: [[1,2],[3,10],[12,16]]
+     */
+    static public int[][] insertInterval(int[][] intervals, int[] newInterval) {
+        // Your code here
+        return new int[][] {};
+    }
+
+    /**
+     * Question 23: Find Kth Largest Element (QuickSelect)
+     * Difficulty: Medium
+     * 
+     * Find the kth largest element without fully sorting.
+     * Use partition method for O(n) average time.
+     * 
+     * Example 1:
+     * Input: nums = [3, 2, 1, 5, 6, 4], k = 2
+     * Output: 5
+     * 
+     * Example 2:
+     * Input: nums = [3, 2, 3, 1, 2, 4, 5, 5, 6], k = 4
+     * Output: 4
+     */
+    static public int findKthLargest(int[] nums, int k) {
+        // Your code here
+        return 0;
+    }
+
+    /**
+     * Question 24: Top K Frequent Elements
+     * Difficulty: Medium
+     * 
+     * Return the k most frequent elements from the array.
+     * 
+     * Example 1:
+     * Input: nums = [1, 1, 1, 2, 2, 3], k = 2
+     * Output: [1, 2]
+     * 
+     * Example 2:
+     * Input: nums = [1], k = 1
+     * Output: [1]
+     */
+    static public int[] topKFrequent(int[] nums, int k) {
+        // Your code here
+        return new int[] {};
+    }
+
+    /**
+     * Question 25: Find Duplicate Number
+     * Difficulty: Medium
+     * 
+     * Given array of n+1 integers where each is between 1 and n,
+     * find the duplicate number. Array contains only one duplicate.
+     * 
+     * Example 1:
+     * Input: nums = [1, 3, 4, 2, 2]
+     * Output: 2
+     * 
+     * Example 2:
+     * Input: nums = [3, 1, 3, 4, 2]
+     * Output: 3
+     */
+    static public int findDuplicate(int[] nums) {
+        // Your code here
+        return 0;
+    }
+
+    /**
+     * Question 26: Trapping Rain Water
+     * Difficulty: Medium
+     * 
+     * Calculate how much rain water can be trapped after raining.
+     * 
+     * Example 1:
+     * Input: height = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]
+     * Output: 6
+     * 
+     * Example 2:
+     * Input: height = [4, 2, 0, 3, 2, 5]
+     * Output: 9
+     */
+    static public int trap(int[] height) {
+        // Your code here
+        return 0;
+    }
+
+    /**
+     * Question 27: Maximum Product Subarray
+     * Difficulty: Medium
+     * 
+     * Find the contiguous subarray with the largest product.
+     * 
+     * Example 1:
+     * Input: nums = [2, 3, -2, 4]
+     * Output: 6
+     * Explanation: [2, 3] has product 6
+     * 
+     * Example 2:
+     * Input: nums = [-2, 0, -1]
+     * Output: 0
+     */
+    static public int maxProduct(int[] nums) {
+        // Your code here
+        return 0;
+    }
+
+    /**
+     * Question 28: 4Sum
+     * Difficulty: Medium
+     * 
+     * Find all unique quadruplets that sum to target.
+     * 
+     * Example 1:
+     * Input: nums = [1, 0, -1, 0, -2, 2], target = 0
+     * Output: [[-2, -1, 1, 2], [-2, 0, 0, 2], [-1, 0, 0, 1]]
+     * 
+     * Example 2:
+     * Input: nums = [2, 2, 2, 2, 2], target = 8
+     * Output: [[2, 2, 2, 2]]
+     */
+    static public int countFourSum(int[] nums, int target) {
+        // Your code here (return count of unique quadruplets)
+        return 0;
+    }
+
+    /**
+     * Question 29: Longest Subarray with Sum K
+     * Difficulty: Medium
+     * 
+     * Find the length of longest subarray with sum equal to k.
+     * 
+     * Example 1:
+     * Input: nums = [1, 2, 3, 1, 1, 1, 1, 4, 2, 3], k = 3
+     * Output: 3
+     * Explanation: Subarrays [1, 1, 1] has length 3
+     * 
+     * Example 2:
+     * Input: nums = [1, 2, 1, 3], k = 2
+     * Output: 1
+     */
+    static public int longestSubarrayWithSumK(int[] nums, int k) {
+        // Your code here
+        return 0;
+    }
+
+    /**
+     * Question 30: Count Inversions
+     * Difficulty: Medium
+     * 
+     * Count the number of inversions in array.
+     * Inversion: i < j and nums[i] > nums[j]
+     * 
+     * Example 1:
+     * Input: nums = [2, 4, 1, 3, 5]
+     * Output: 3
+     * Explanation: (2, 1), (4, 1), (4, 3)
+     * 
+     * Example 2:
+     * Input: nums = [5, 4, 3, 2, 1]
+     * Output: 10
+     */
+    static public int countInversions(int[] nums) {
+        // Your code here
+        return 0;
+    }
+
+    // Main method for testing
+    public static void main(String[] args) {
+        // Test your solutions here
+        System.out.println("Medium Array Questions - Ready to solve!");
+    }
+}
