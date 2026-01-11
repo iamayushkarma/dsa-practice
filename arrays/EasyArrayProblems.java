@@ -713,9 +713,21 @@ public class EasyArrayProblems {
      * Input: nums = [3, 2, 3, 1, 2, 4, 5, 5, 6], k = 4
      * Output: 4
      */
-    public int kthLargest(int[] nums, int k) {
+    static public int kthLargest(int[] nums, int k) {
+        int n = nums.length;
+        boolean flag = false;
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - i - 1; j++) {
+                if (nums[j] > nums[j + 1]) {
+                    numberSwap(nums, j, j + 1);
+                    flag = true;
+                }
+            }
+            if (!flag)
+                return 0;
+        }
+        return nums[k - 1];
 
-        return 0;
     }
 
     /**
@@ -734,8 +746,15 @@ public class EasyArrayProblems {
      * Input: nums = [1, 3, 5]
      * Output: [1, 3, 5]
      */
-    public int[] separateEvenOdd(int[] nums) {
-        // Your code here
+    static public int[] separateEvenOdd(int[] nums) {
+        int idx = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] % 2 == 0) {
+                if (nums[i] == idx)
+                    continue;
+                swap(nums, idx++, i);
+            }
+        }
         return nums;
     }
 
@@ -755,8 +774,14 @@ public class EasyArrayProblems {
      * Input: nums = [1, 1, 1, 2, 2]
      * Output: 1
      */
-    public int majorityElement(int[] nums) {
-        // Your code here
+    static public int majorityElement(int[] nums) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int value : nums) {
+            map.put(value, map.getOrDefault(value, 0) + 1);
+
+            if (map.get(value) > nums.length / 2)
+                return value;
+        }
         return 0;
     }
 
@@ -775,9 +800,22 @@ public class EasyArrayProblems {
      * Input: nums1 = [4, 9, 5], nums2 = [9, 4, 9, 8, 4]
      * Output: [4, 9] or [9, 4]
      */
-    public int[] findIntersection(int[] nums1, int[] nums2) {
-        // Your code here
-        return new int[0];
+    static public int[] findIntersection(int[] nums1, int[] nums2) {
+        HashSet<Integer> map = new HashSet<>();
+        HashSet<Integer> map2 = new HashSet<>();
+
+        for (int value : nums1) {
+            map.add(value);
+        }
+        for (int value : nums2) {
+            if (map.contains(value)) {
+                map2.add(value);
+            }
+        }
+        int[] intersectionArray = map2.stream()
+                .mapToInt(Integer::intValue)
+                .toArray();
+        return intersectionArray;
     }
 
     /**
@@ -798,9 +836,21 @@ public class EasyArrayProblems {
      * Output: 5
      * Explanation: 6 is a peak element (1 or 5 are also valid answers)
      */
-    public int findPeakElement(int[] nums) {
-        // Your code here
-        return 0;
+    static public int findPeakElement(int[] nums) {
+        int n = nums.length;
+        int start = 0;
+        int end = n - 1;
+        while (start < end) {
+            int mid = start + (end - start) / 2;
+            if (nums[mid - 1] < nums[mid] && nums[mid] > nums[mid + 1])
+                return mid;
+            else if (nums[mid] < nums[mid + 1]) {
+                start = mid + 1;
+            } else {
+                end = mid - 1;
+            }
+        }
+        return start;
     }
 
     // Main method for testing
@@ -949,6 +999,41 @@ public class EasyArrayProblems {
         System.out.print(" Modified array is: ");
         int[] mergeArrays = mergeSortedArrays(nums25_1, nums25_2);
         displayArray(mergeArrays);
+        System.out.println();
+
+        // Q26
+        System.out.print("Q26 -->");
+        int[] nums26 = { 1, 3, 4, 9, 11, 7, 5, 2, 21 };
+        System.out.print(" Kth largest element is: " + kthLargest(nums26, 5));
+        System.out.println();
+
+        // Q27
+        System.out.print("Q27 -->");
+        int[] nums27 = { 1, 3, 4, 2, 7, 9, 11, 1, 6, 8 };
+        System.out.print(" Modified array is: ");
+        int[] separateEvenOdd = separateEvenOdd(nums27);
+        displayArray(separateEvenOdd);
+        System.out.println();
+
+        // Q28
+        System.out.print("Q28 -->");
+        int[] nums28 = { 1, 3, 3, 9, 3, 7, 3, 2, 3 };
+        System.out.print(" Majority element is: " + majorityElement(nums28));
+        System.out.println();
+
+        // Q29
+        System.out.print("Q29 -->");
+        int[] nums29_1 = { 1, 2, 3, 4, 3, 22, 21 };
+        int[] nums29_2 = { 4, 5, 7, 9, 6, 21 };
+        System.out.print(" Intersecting array is: ");
+        int[] IntersectionArray = findIntersection(nums29_1, nums29_2);
+        displayArray(IntersectionArray);
+        System.out.println();
+
+        // Q30
+        System.out.print("Q30 -->");
+        int[] nums30 = { 1, 2, 2, 3, 5, 6, 4, 3 };
+        System.out.print(" Peek element is: " + findPeakElement(nums30));
         System.out.println();
     }
 }
