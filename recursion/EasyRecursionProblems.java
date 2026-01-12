@@ -20,8 +20,9 @@ public class EasyRecursionProblems {
      * Output: 55
      */
     static public int sumOfN(int n) {
-        // Your code here
-        return 0;
+        if (n == 1)
+            return 1;
+        return n + sumOfN(n - 1);
     }
 
     /**
@@ -40,8 +41,9 @@ public class EasyRecursionProblems {
      * Output: 6
      */
     static public int factorial(int n) {
-        // Your code here
-        return 0;
+        if (n == 1)
+            return 1;
+        return n * factorial(n - 1);
     }
 
     /**
@@ -61,8 +63,9 @@ public class EasyRecursionProblems {
      * Output: 25
      */
     static public int power(int base, int exponent) {
-        // Your code here
-        return 0;
+        if (exponent == 1)
+            return base;
+        return base * power(base, exponent - 1);
     }
 
     /**
@@ -80,8 +83,9 @@ public class EasyRecursionProblems {
      * Output: 3
      */
     static public int countDigits(int n) {
-        // Your code here
-        return 0;
+        if (n < 10)
+            return 1;
+        return 1 + countDigits(n / 10);
     }
 
     /**
@@ -100,8 +104,9 @@ public class EasyRecursionProblems {
      * Output: 15
      */
     static public int sumOfDigits(int n) {
-        // Your code here
-        return 0;
+        if (n < 10)
+            return n;
+        return n % 10 + sumOfDigits(n / 10);
     }
 
     /**
@@ -120,8 +125,9 @@ public class EasyRecursionProblems {
      * Output: 24
      */
     static public int productOfDigits(int n) {
-        // Your code here
-        return 0;
+        if (n < 10)
+            return n;
+        return (n % 10) * productOfDigits(n / 10);
     }
 
     /**
@@ -139,8 +145,9 @@ public class EasyRecursionProblems {
      * Output: 7654
      */
     static public int reverseNumber(int n) {
-        // Your code here
-        return 0;
+        if (n < 10)
+            return n;
+        return reverseNumber(n / 10);
     }
 
     /**
@@ -153,15 +160,20 @@ public class EasyRecursionProblems {
      * Example 1:
      * Input: n = 5
      * Output: 5
-     * Explanation: 0, 1, 1, 2, 3, 5
+     * Explanation: 0, 1, 1, 2, 3, 5, 8, 12
      * 
      * Example 2:
      * Input: n = 7
      * Output: 13
      */
     static public int fibonacci(int n) {
-        // Your code here
-        return 0;
+        if (n == 0)
+            return 0;
+
+        if (n == 1)
+            return 1;
+
+        return fibonacci(n - 1) + fibonacci(n - 2);
     }
 
     /**
@@ -591,12 +603,54 @@ public class EasyRecursionProblems {
 
     // Main method for testing
     public static void main(String[] args) {
-        // Test your solutions here
-        System.out.println("Easy Recursion Questions - Ready to solve!");
+        // Q1
+        System.out.println();
+        System.out.print("Q1 -->");
+        int n1 = 50;
+        System.out.print(" Sum of n natural numbers is: " + sumOfN(n1));
+        System.out.println();
 
-        // Example tests
-        // System.out.println(sumOfN(5)); // Should print 15
-        // System.out.println(factorial(5)); // Should print 120
-        // System.out.println(power(2, 3)); // Should print 8
+        // Q2
+        System.out.print("Q2 -->");
+        int n2 = 5;
+        System.out.print(" Factorial is: " + factorial(n2));
+        System.out.println();
+
+        // Q3
+        System.out.print("Q3 -->");
+        int base3 = 5;
+        int exponential3 = 2;
+        System.out.print(" Exponential value is: " + power(base3, exponential3));
+        System.out.println();
+
+        // Q4
+        System.out.print("Q4 -->");
+        int n4 = 5859575;
+        System.out.print(" Total digits are: " + countDigits(n4));
+        System.out.println();
+
+        // Q5
+        System.out.print("Q5 -->");
+        int n5 = 12345;
+        System.out.print(" Total sum of digits is: " + sumOfDigits(n5));
+        System.out.println();
+
+        // Q6
+        System.out.print("Q6 -->");
+        int n6 = 123;
+        System.out.print(" product of digits is: " + productOfDigits(n6));
+        System.out.println();
+
+        // Q7
+        System.out.print("Q7 -->");
+        int n7 = 123;
+        System.out.print(" Reversed number is: " + reverseNumber(n7));
+        System.out.println();
+
+        // Q8
+        System.out.print("Q8 -->");
+        int n8 = 9;
+        System.out.print(" nth fibonacci number is: " + fibonacci(n8));
+        System.out.println();
     }
 }
