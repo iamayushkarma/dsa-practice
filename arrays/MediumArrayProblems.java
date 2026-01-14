@@ -1,7 +1,27 @@
 package arrays;
 
+import java.util.*;
+
 public class MediumArrayProblems {
     // MEDIUM QUESTIONS (1-30)
+
+    // helper function
+    static void displayArray(int[] arr) {
+        for (int val : arr) {
+            System.out.print(val + " ");
+        }
+    }
+
+    static void swap(int[] arr, int value1, int value2) {
+        while (value1 < value2) {
+            int temp = arr[value1];
+            arr[value1] = arr[value2];
+            arr[value2] = temp;
+
+            value1++;
+            value2--;
+        }
+    }
 
     /**
      * Question 1: Two Sum
@@ -21,8 +41,17 @@ public class MediumArrayProblems {
      * Output: [1, 2]
      */
     static public int[] twoSum(int[] nums, int target) {
-        // Your code here
-        return new int[] {};
+        Map<Integer, Integer> map = new HashMap<>();
+        int[] ans = {};
+
+        for (int i = 0; i < nums.length; i++) {
+            int req_pair = target - nums[i];
+            if (map.containsKey(req_pair)) {
+                ans = new int[] { map.get(req_pair), i };
+            }
+            map.put(nums[i], i);
+        }
+        return ans;
     }
 
     /**
@@ -63,8 +92,19 @@ public class MediumArrayProblems {
      * Output: [0, 0, 9, 0, 0]
      */
     static public int[] productExceptSelf(int[] nums) {
-        // Your code here
-        return new int[] {};
+        int n = nums.length;
+        int[] ans = new int[n];
+
+        ans[0] = 1;
+        for (int i = 1; i < n; i++) {
+            ans[i] = ans[i - 1] * nums[i - 1];
+        }
+        int suffix = 1;
+        for (int i = n - 2; i >= 0; i--) {
+            suffix *= nums[i + 1];
+            ans[i] *= suffix;
+        }
+        return ans;
     }
 
     /**
@@ -84,8 +124,23 @@ public class MediumArrayProblems {
      * Output: 1
      */
     static public int maxArea(int[] height) {
-        // Your code here
-        return 0;
+        int n = height.length;
+        int i = 0;
+        int j = n - 1;
+        int max_area = 0;
+
+        while (i <= j) {
+            int width = j - i;
+            int high = Math.min(height[i], height[j]);
+            int current_area = width * high;
+            max_area = Math.max(current_area, max_area);
+
+            if (height[i] <= height[j])
+                i++;
+            else
+                j--;
+        }
+        return max_area;
     }
 
     /**
@@ -103,7 +158,13 @@ public class MediumArrayProblems {
      * Output: [3, 99, -1, -100]
      */
     static public void rotateRight(int[] nums, int k) {
-        // Your code here
+        int i = 0;
+        int j = nums.length - 1;
+        swap(nums, i, j);
+        swap(nums, i, k - 1);
+        swap(nums, k, j);
+
+        displayArray(nums);
     }
 
     /**
@@ -122,8 +183,22 @@ public class MediumArrayProblems {
      * Output: [1]
      */
     static public int[] findDuplicates(int[] nums) {
-        // Your code here
-        return new int[] {};
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int val : nums) {
+            map.put(val, map.getOrDefault(val, 0) + 1);
+        }
+        int count = 0;
+        for (int val : map.keySet()) {
+            if (map.get(val) > 1)
+                count++;
+        }
+        int[] ans = new int[count];
+        int idx = 0;
+        for (int val : map.keySet()) {
+            if (map.get(val) > 1)
+                ans[idx++] = val;
+        }
+        return ans;
     }
 
     /**
@@ -142,8 +217,17 @@ public class MediumArrayProblems {
      * Output: 1
      */
     static public int maxSubarraySum(int[] nums) {
-        // Your code here
-        return 0;
+        int max_sum = Integer.MIN_VALUE;
+        int curr_sum = 0;
+
+        for (int val : nums) {
+            curr_sum += val;
+            max_sum = Math.max(curr_sum, max_sum);
+            if (curr_sum < 0)
+                curr_sum = 0;
+        }
+
+        return max_sum;
     }
 
     /**
@@ -597,7 +681,39 @@ public class MediumArrayProblems {
 
     // Main method for testing
     public static void main(String[] args) {
-        // Test your solutions here
-        System.out.println("Medium Array Questions - Ready to solve!");
+
+        System.out.println();
+        System.out.print("ans Q1 --> ");
+        int[] arr1 = { 2, 7, 11, 15 };
+        int target = 9;
+        int[] ans1 = twoSum(arr1, target);
+        displayArray(ans1);
+
+        System.out.println();
+        System.out.print("ans Q3 --> ");
+        int[] arr3 = { 1, 2, 3, 4, 5 };
+        int[] ans3 = productExceptSelf(arr3);
+        displayArray(ans3);
+
+        System.out.println();
+        System.out.print("ans Q4 --> ");
+        int[] arr4 = { 1, 8, 6, 2, 5, 4, 8, 3, 7 };
+        System.out.println("Max area is: " + maxArea(arr4));
+
+        System.out.print("ans Q5 --> ");
+        int[] arr5 = { 1, 2, 3, 4, 5, 6, 7 };
+        int target5 = 3;
+        rotateRight(arr5, target5);
+
+        System.out.println();
+        System.out.print("ans Q6 --> ");
+        int[] arr6 = { 1, 2, 3, 2, 6, 4, 5, 6, 9, 9, 8, 10, 5 };
+        int[] ans6 = findDuplicates(arr6);
+        displayArray(ans6);
+
+        System.out.println();
+        System.out.print("ans Q7 --> ");
+        int[] arr7 = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+        System.out.println("Max sum of sub array is: " + maxSubarraySum(arr7));
     }
 }

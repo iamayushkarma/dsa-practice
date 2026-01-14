@@ -19,8 +19,11 @@ public class EasyStringProblems {
      * Output: 16
      */
     static public int stringLength(String str) {
-        // Your code here
-        return 0;
+        int length = 0;
+        for (int i = 0; i < str.length(); i++) {
+            length++;
+        }
+        return length;
     }
 
     /**
