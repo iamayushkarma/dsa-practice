@@ -41,8 +41,16 @@ public class EasyStringProblems {
      * Output: "JAVA"
      */
     static public String toUpperCase(String str) {
-        // Your code here
-        return "";
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if (ch >= 'a' && ch <= 'z') {
+                ch = (char) (ch - ('a' - 'A'));
+            }
+            sb.append(ch);
+
+        }
+        return sb.toString();
     }
 
     /**
@@ -60,8 +68,16 @@ public class EasyStringProblems {
      * Output: "world"
      */
     static public String toLowerCase(String str) {
-        // Your code here
-        return "";
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if (ch >= 'A' && ch <= 'Z') {
+                ch = (char) (ch - ('A' - 'a'));
+            }
+            sb.append(ch);
+
+        }
+        return sb.toString();
     }
 
     /**
@@ -79,8 +95,17 @@ public class EasyStringProblems {
      * Output: "avaJ"
      */
     static public String reverseString(String str) {
-        // Your code here
-        return "";
+        char[] a = str.toCharArray();
+        int i = 0, j = a.length - 1;
+
+        while (i < j) {
+            char temp = a[i];
+            a[i] = a[j];
+            a[j] = temp;
+            i++;
+            j--;
+        }
+        return new String(a);
     }
 
     /**
@@ -99,8 +124,7 @@ public class EasyStringProblems {
      * Output: false
      */
     static public boolean isPalindrome(String str) {
-        // Your code here
-        return false;
+        return str.equals(reverseString(str));
     }
 
     /**
@@ -121,8 +145,14 @@ public class EasyStringProblems {
      * Explanation: 'o', 'a', 'i' are vowels
      */
     static public int countVowels(String str) {
-        // Your code here
-        return 0;
+        String vowels = "aeiou";
+        int count = 0;
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if (vowels.indexOf(ch) != -1)
+                count++;
+        }
+        return count;
     }
 
     /**
@@ -161,7 +191,7 @@ public class EasyStringProblems {
      * Output: 4
      */
     static public int countWords(String str) {
-        // Your code here
+
         return 0;
     }
 
@@ -194,7 +224,7 @@ public class EasyStringProblems {
      * Input: str = "hello123"
      * Output: 3
      * 
-     * Example 2:
+     * Example 2:int
      * Input: str = "abc"
      * Output: 0
      */
@@ -593,10 +623,24 @@ public class EasyStringProblems {
 
     // Main method for testing
     public static void main(String[] args) {
-        // Test your solutions here
-        System.out.println("Easy String Questions - Ready to solve!");
 
-        // Example test
-        // System.out.println(stringLength("hello")); // Should print 5
+        System.out.println();
+        String str1 = "Java DSA";
+        System.out.println("Q1 --> " + stringLength(str1));
+
+        String str2 = "Java DSA";
+        System.out.println("Q2 --> " + toUpperCase(str2));
+
+        String str3 = "JAVA DSA";
+        System.out.println("Q3 --> " + toLowerCase(str3));
+
+        String str4 = "Java DSA";
+        System.out.println("Q4 --> " + reverseString(str4));
+
+        String str5 = "abcba";
+        System.out.println("Q5 --> " + isPalindrome(str5));
+
+        String str6 = "ibcba";
+        System.out.println("Q6 --> " + countVowels(str6));
     }
 }
