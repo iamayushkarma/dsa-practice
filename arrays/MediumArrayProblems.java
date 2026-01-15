@@ -264,8 +264,23 @@ public class MediumArrayProblems {
      * Output: 5
      */
     static public int findPeakElement(int[] nums) {
-        // Your code here
-        return 0;
+        int n = nums.length;
+        int i = 0;
+        int j = n - 1;
+
+        while (i <= j) {
+            int mid = i + ((j - i) / 2);
+
+            if (nums[mid] > nums[mid - 1] && nums[mid] > nums[mid + 1])
+                return mid;
+            else if (nums[mid] < nums[mid + 1]) {
+                i = mid + 1;
+            } else {
+                j = mid;
+            }
+
+        }
+        return -1;
     }
 
     /**
@@ -283,7 +298,31 @@ public class MediumArrayProblems {
      * Output: -1
      */
     static public int searchRotated(int[] nums, int target) {
-        // Your code here
+        int n = nums.length;
+        int i = 0;
+        int j = n - 1;
+
+        while (i <= j) {
+            int mid = i + (j - i) / 2;
+            if (nums[mid] == target) {
+                return mid;
+            }
+            // chack is left part is sorted
+            if (nums[mid] >= nums[i]) {
+                if (target >= nums[i] && target < nums[mid]) { // check if target lie between the sorted part
+                    j = mid - 1;
+                } else {
+                    i = mid + 1;
+                }
+            } else {
+                if (target > nums[mid] && target <= nums[j]) {
+                    i = mid + 1;
+                } else {
+                    j = mid - 1;
+                }
+
+            }
+        }
         return -1;
     }
 
@@ -302,8 +341,21 @@ public class MediumArrayProblems {
      * Output: 0
      */
     static public int findMin(int[] nums) {
-        // Your code here
-        return 0;
+        int n = nums.length;
+        int i = 0;
+        int j = n - 1;
+
+        while (i < j) {
+            int mid = i + ((j - i) / 2);
+            if (nums[i] < nums[j])
+                return nums[i];
+            if (nums[mid] >= nums[i]) {
+                i = mid + 1;
+            } else {
+                j = mid;
+            }
+        }
+        return nums[i];
     }
 
     /**
@@ -382,8 +434,22 @@ public class MediumArrayProblems {
      * Output: 9
      */
     static public int longestConsecutive(int[] nums) {
-        // Your code here
-        return 0;
+        HashSet<Integer> set = new HashSet<>();
+        int max_seq = 0;
+        int idx = 0;
+        for (int val : nums) {
+            set.add(val);
+        }
+        for (int val : nums) {
+            if (set.contains(val - 1)) {
+                int curr_length = 1;
+                while (set.contains(val++)) {
+                    curr_length++;
+                }
+                max_seq = Math.max(max_seq, curr_length);
+            }
+        }
+        return max_seq;
     }
 
     /**
@@ -715,5 +781,23 @@ public class MediumArrayProblems {
         System.out.print("ans Q7 --> ");
         int[] arr7 = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
         System.out.println("Max sum of sub array is: " + maxSubarraySum(arr7));
+
+        System.out.print("ans Q9 --> ");
+        int[] arr9 = { 1, 2, 3, 1 };
+        System.out.println("peek element is: " + findPeakElement(arr9));
+
+        System.out.print("ans Q10 --> ");
+        int[] arr10 = { 4, 5, 6, 7, 0, 1, 2 };
+        int k10 = 0;
+        System.out.println("Element is at idx: " + searchRotated(arr10, k10));
+
+        System.out.print("ans Q11 --> ");
+        int[] arr11 = { 4, 5, 6, 7, 0, 1, 2 };
+        System.out.println("Minimum element is: " + findMin(arr11));
+
+        System.out.print("ans Q15 --> ");
+        int[] arr15 = { 0, 3, 7, 2, 5, 8, 4, 6, 0, 1 };
+        System.out.println("Max longest sequence is: " + longestConsecutive(arr15));
+
     }
 }
