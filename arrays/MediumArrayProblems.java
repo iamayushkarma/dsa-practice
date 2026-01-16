@@ -458,8 +458,17 @@ public class MediumArrayProblems {
      * Explanation: Subarrays [1, 2] and [3]
      */
     static public int subarraySum(int[] nums, int k) {
-        // Your code here
-        return 0;
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(0, 1);
+        int count = 0;
+        int current_prefix_sum = 0;
+
+        for (int val : nums) {
+            current_prefix_sum += val;
+            count += map.getOrDefault(current_prefix_sum - k, 0);
+            map.put(current_prefix_sum, map.getOrDefault(current_prefix_sum, 0) + 1);
+        }
+        return count;
     }
 
     /**
@@ -868,6 +877,12 @@ public class MediumArrayProblems {
         int[] arr12 = { 3, 2, 1 };
         nextPermutation(arr12);
         System.out.println("Next permutatation is: " + Arrays.toString(arr12));
+
+        System.out.print("ans Q13 --> ");
+        int[] arr13 = { 3, 4, 7, 2, -3, 1, 4, 2 };
+        int k13 = 7;
+        nextPermutation(arr12);
+        System.out.println("Sub array length is: " + subarraySum(arr13, k13));
 
         System.out.print("ans Q15 --> ");
         int[] arr15 = { 0, 3, 7, 2, 5, 8, 4, 6, 0, 1 };
