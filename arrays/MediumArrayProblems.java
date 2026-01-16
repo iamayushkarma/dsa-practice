@@ -12,6 +12,20 @@ public class MediumArrayProblems {
         }
     }
 
+    static void swapValue(int[] arr, int value1, int value2) {
+        int temp = arr[value1];
+        arr[value1] = arr[value2];
+        arr[value2] = temp;
+    }
+
+    static void reverseArray(int[] arr, int st, int end) {
+        while (st <= end) {
+            swap(arr, st, end);
+            st++;
+            end--;
+        }
+    }
+
     static void swap(int[] arr, int value1, int value2) {
         while (value1 < value2) {
             int temp = arr[value1];
@@ -245,7 +259,38 @@ public class MediumArrayProblems {
      * Output: [0, 1, 2]
      */
     static public void sortColors(int[] nums) {
-        // Your code here
+        int n = nums.length;
+
+        int mid = 0, low = 0;
+        int high = n - 1;
+
+        while (mid <= high) {
+            switch (nums[mid]) {
+                case 0 -> {
+                    swapValue(nums, low, mid);
+                    low++;
+                    mid++;
+                    break;
+                }
+                case 1 -> {
+                    mid++;
+                    break;
+                }
+                case 2 -> {
+                    swapValue(nums, mid, high);
+                    high--;
+                    break;
+                }
+            }
+        }
+
+        // for (int i = 1; i < n; i++) {
+        // int j = i;
+        // while (j > 0 && nums[j] < nums[j - 1]) {
+        // swapValue(nums, j, j - 1);
+        // j--;
+        // }
+        // }
     }
 
     /**
@@ -374,7 +419,26 @@ public class MediumArrayProblems {
      * Output: [1, 2, 3]
      */
     static public void nextPermutation(int[] nums) {
-        // Your code here
+        int n = nums.length;
+        int pivot = -1;
+        for (int i = n - 2; i >= 0; i--) {
+            if (nums[i] < nums[i + 1]) {
+                pivot = i;
+                break;
+            }
+        }
+        if (pivot == -1) {
+            reverseArray(nums, 0, n - 1);
+            return;
+        }
+
+        for (int i = n - 1; i > pivot; i--) {
+            if (nums[i] > nums[pivot]) {
+                swapValue(nums, i, pivot);
+                break;
+            }
+        }
+        reverseArray(nums, pivot + 1, n - 1);
     }
 
     /**
@@ -782,6 +846,11 @@ public class MediumArrayProblems {
         int[] arr7 = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
         System.out.println("Max sum of sub array is: " + maxSubarraySum(arr7));
 
+        System.out.print("ans Q8 --> ");
+        int[] arr8 = { 2, 0, 2, 1, 1, 0 };
+        sortColors(arr8);
+        System.out.println(Arrays.toString(arr8));
+
         System.out.print("ans Q9 --> ");
         int[] arr9 = { 1, 2, 3, 1 };
         System.out.println("peek element is: " + findPeakElement(arr9));
@@ -794,6 +863,11 @@ public class MediumArrayProblems {
         System.out.print("ans Q11 --> ");
         int[] arr11 = { 4, 5, 6, 7, 0, 1, 2 };
         System.out.println("Minimum element is: " + findMin(arr11));
+
+        System.out.print("ans Q12 --> ");
+        int[] arr12 = { 3, 2, 1 };
+        nextPermutation(arr12);
+        System.out.println("Next permutatation is: " + Arrays.toString(arr12));
 
         System.out.print("ans Q15 --> ");
         int[] arr15 = { 0, 3, 7, 2, 5, 8, 4, 6, 0, 1 };
