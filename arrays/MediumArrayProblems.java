@@ -590,8 +590,40 @@ public class MediumArrayProblems {
      * Output: [1,2,3,4,8,12,11,10,9,5,6,7]
      */
     static public int[] spiralOrder(int[][] matrix) {
-        // Your code here
-        return new int[] {};
+        int row = matrix.length;
+        int col = matrix[0].length;
+        int[] ans = new int[row * col];
+        int idx = 0;
+        int st_row = 0, st_col = 0;
+        int end_row = row - 1;
+        int end_col = col - 1;
+        while (st_row <= end_row && st_col <= end_col) {
+            // top-left -> top-right
+            for (int i = st_col; i <= end_col; i++) {
+                ans[idx++] = matrix[st_row][i];
+            }
+            st_row++;
+            // top-right -> bottom right
+            for (int i = st_row; i <= end_row; i++) {
+                ans[idx++] = matrix[i][end_col];
+            }
+            end_col--;
+            // bottom-right -> bottom left
+            if (st_row <= end_row) {
+                for (int i = end_col; i >= st_col; i--) {
+                    ans[idx++] = matrix[end_row][i];
+                }
+                end_row--;
+            }
+            // bottom-left -> top-right
+            if (st_col <= end_col) {
+                for (int i = end_row; i >= st_row; i--) {
+                    ans[idx++] = matrix[i][st_col];
+                }
+                st_col++;
+            }
+        }
+        return ans;
     }
 
     /**
@@ -922,6 +954,17 @@ public class MediumArrayProblems {
         System.out.print("ans Q15 --> ");
         int[] arr15 = { 0, 3, 7, 2, 5, 8, 4, 6, 0, 1 };
         System.out.println("Max longest sequence is: " + longestConsecutive(arr15));
+
+        System.out.print("ans Q17 --> ");
+        int[][] arr17 = {
+                { 1, 2, 3, 4 },
+                { 5, 6, 7, 8 },
+                { 9, 10, 11, 12 },
+                { 13, 14, 15, 16 }
+        };
+        System.out.print(" Spiral sequence is: ");
+        int[] list17 = spiralOrder(arr17);
+        displayArray(list17);
 
     }
 }
