@@ -259,38 +259,27 @@ public class MediumArrayProblems {
      * Output: [0, 1, 2]
      */
     static public void sortColors(int[] nums) {
-        int n = nums.length;
 
-        int mid = 0, low = 0;
+        int n = nums.length;
+        int low = 0, mid = 0;
         int high = n - 1;
 
         while (mid <= high) {
             switch (nums[mid]) {
                 case 0 -> {
                     swapValue(nums, low, mid);
-                    low++;
                     mid++;
-                    break;
+                    low++;
                 }
                 case 1 -> {
                     mid++;
-                    break;
                 }
                 case 2 -> {
                     swapValue(nums, mid, high);
                     high--;
-                    break;
                 }
             }
         }
-
-        // for (int i = 1; i < n; i++) {
-        // int j = i;
-        // while (j > 0 && nums[j] < nums[j - 1]) {
-        // swapValue(nums, j, j - 1);
-        // j--;
-        // }
-        // }
     }
 
     /**
@@ -487,8 +476,50 @@ public class MediumArrayProblems {
      * Output: [-1, -1]
      */
     static public int[] searchRange(int[] nums, int target) {
-        // Your code here
-        return new int[] { -1, -1 };
+        int first = searchForLeft(nums, target);
+        if (first == -1)
+            return new int[] { -1, -1 };
+        int last = searchForRight(nums, target);
+
+        return new int[] { first, last };
+    }
+
+    static public int searchForLeft(int[] nums, int target) {
+        int ans = -1;
+        int n = nums.length;
+        int st = 0;
+        int end = n - 1;
+
+        while (st <= end) {
+            int mid = st + ((end - st) / 2);
+            if (nums[mid] >= target) {
+                if (nums[mid] == target)
+                    ans = mid;
+                end = mid - 1;
+            } else {
+                st = mid + 1;
+            }
+        }
+        return ans;
+    }
+
+    static public int searchForRight(int[] nums, int target) {
+        int ans = -1;
+        int n = nums.length;
+        int st = 0;
+        int end = n - 1;
+
+        while (st <= end) {
+            int mid = st + ((end - st) / 2);
+            if (nums[mid] <= target) {
+                if (nums[mid] == target)
+                    ans = mid;
+                st = mid + 1;
+            } else {
+                end = mid - 1;
+            }
+        }
+        return ans;
     }
 
     /**
@@ -881,8 +912,12 @@ public class MediumArrayProblems {
         System.out.print("ans Q13 --> ");
         int[] arr13 = { 3, 4, 7, 2, -3, 1, 4, 2 };
         int k13 = 7;
-        nextPermutation(arr12);
         System.out.println("Sub array length is: " + subarraySum(arr13, k13));
+
+        System.out.print("ans Q14 --> ");
+        int[] arr14 = { 5, 7, 7, 8, 8, 10 };
+        int k14 = 8;
+        System.out.println("First and last occurance is: " + Arrays.toString(searchRange(arr14, k14)));
 
         System.out.print("ans Q15 --> ");
         int[] arr15 = { 0, 3, 7, 2, 5, 8, 4, 6, 0, 1 };
