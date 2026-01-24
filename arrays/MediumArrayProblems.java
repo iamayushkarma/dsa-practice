@@ -965,6 +965,5 @@ public class MediumArrayProblems {
         System.out.print(" Spiral sequence is: ");
         int[] list17 = spiralOrder(arr17);
         displayArray(list17);
-
     }
 }

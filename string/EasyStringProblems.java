@@ -171,8 +171,14 @@ public class EasyStringProblems {
      * Output: 0
      */
     static public int countConsonants(String str) {
-        // Your code here
-        return 0;
+        String vowels = "aeiou";
+        int count = 0;
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if (vowels.indexOf(ch) == -1)
+                count++;
+        }
+        return count;
     }
 
     /**
@@ -191,8 +197,21 @@ public class EasyStringProblems {
      * Output: 4
      */
     static public int countWords(String str) {
-
-        return 0;
+        int count = 0;
+        str = str.trim();
+        boolean inWord = false;
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if (ch != ' ') {
+                if (!inWord) {
+                    count++;
+                    inWord = true;
+                }
+            } else {
+                inWord = false;
+            }
+        }
+        return count;
     }
 
     /**
@@ -210,8 +229,14 @@ public class EasyStringProblems {
      * Output: 2
      */
     static public int countSpaces(String str) {
-        // Your code here
-        return 0;
+        int spaces = 0;
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if (ch == ' ') {
+                spaces++;
+            }
+        }
+        return spaces;
     }
 
     /**
@@ -229,8 +254,14 @@ public class EasyStringProblems {
      * Output: 0
      */
     static public int countDigits(String str) {
-        // Your code here
-        return 0;
+        int digitCount = 0;
+
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if (ch >= '0' && ch <= '9')
+                digitCount++;
+        }
+        return digitCount;
     }
 
     /**
@@ -248,7 +279,12 @@ public class EasyStringProblems {
      * Output: 'J'
      */
     static public char firstCharacter(String str) {
-        // Your code here
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if (ch != ' ') {
+                return ch;
+            }
+        }
         return '\0';
     }
 
@@ -267,7 +303,12 @@ public class EasyStringProblems {
      * Output: 'a'
      */
     static public char lastCharacter(String str) {
-        // Your code here
+        int s = str.length();
+        for (int i = s - 1; i >= 0; i--) {
+            char ch = str.charAt(i);
+            if (ch != ' ')
+                return ch;
+        }
         return '\0';
     }
 
@@ -286,7 +327,11 @@ public class EasyStringProblems {
      * Output: 'J'
      */
     static public char charAt(String str, int index) {
-        // Your code here
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if (i == index)
+                return ch;
+        }
         return '\0';
     }
 
@@ -305,8 +350,7 @@ public class EasyStringProblems {
      * Output: "JavaProgramming"
      */
     static public String concatenate(String str1, String str2) {
-        // Your code here
-        return "";
+        return str1.concat(str2);
     }
 
     /**
@@ -325,8 +369,19 @@ public class EasyStringProblems {
      * Output: false
      */
     static public boolean areEqual(String str1, String str2) {
-        // Your code here
-        return false;
+        int s1 = str1.length();
+        int s2 = str2.length();
+
+        if (s1 != s2)
+            return false;
+
+        for (int i = 0; i < s1; i++) {
+            char ch1 = str1.charAt(i);
+            char ch2 = str2.charAt(i);
+            if (ch1 != ch2)
+                return false;
+        }
+        return true;
     }
 
     /**
@@ -642,5 +697,30 @@ public class EasyStringProblems {
 
         String str6 = "ibcba";
         System.out.println("Q6 --> " + countVowels(str6));
+
+        String str7 = "aeiog";
+        System.out.println("Q7 --> " + countConsonants(str7));
+
+        String str8 = "Hello world";
+        System.out.println("Q8 --> " + countWords(str8));
+
+        String str9 = "Hello world";
+        System.out.println("Q9 --> " + countSpaces(str9));
+
+        String str10 = "Hello world";
+        System.out.println("Q10 --> " + countDigits(str10));
+
+        String str11 = "Hello";
+        System.out.println("Q11 --> " + firstCharacter(str11));
+
+        String str12 = "vamos";
+        System.out.println("Q12 --> " + lastCharacter(str12));
+
+        String str13 = "vamos";
+        System.out.println("Q13 --> " + charAt(str13, 2));
+
+        System.out.println("Q14 --> " + concatenate("visca", " barca"));
+
+        System.out.println("Q15 --> " + areEqual("acc", "abc"));
     }
 }
