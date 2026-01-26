@@ -191,7 +191,11 @@ public class EasyRecursionProblems {
      * Output: 1 2 3
      */
     static public void printNumbers(int n) {
-        // Your code here
+        if (n == 0)
+            return;
+        printNumbers(n - 1);
+        System.out.print(n + " ");
+
     }
 
     /**
@@ -209,7 +213,10 @@ public class EasyRecursionProblems {
      * Output: 3 2 1
      */
     static public void printReverse(int n) {
-        // Your code here
+        if (n == 0)
+            return;
+        System.out.print(n + " ");
+        printNumbers(n - 1);
     }
 
     /**
@@ -228,8 +235,9 @@ public class EasyRecursionProblems {
      * Output: 60
      */
     static public int arraySum(int[] arr, int n) {
-        // Your code here
-        return 0;
+        if (n == 0)
+            return 0;
+        return arr[n - 1] + arraySum(arr, n - 1);
     }
 
     /**
@@ -246,9 +254,11 @@ public class EasyRecursionProblems {
      * Input: arr = [10, 20, 5], n = 3
      * Output: 20
      */
+
     static public int arrayMax(int[] arr, int n) {
-        // Your code here
-        return 0;
+        if (n == 1)
+            return arr[0];
+        return Math.max(arr[n - 1], arrayMax(arr, n - 1));
     }
 
     /**
@@ -266,8 +276,9 @@ public class EasyRecursionProblems {
      * Output: 5
      */
     static public int arrayMin(int[] arr, int n) {
-        // Your code here
-        return 0;
+        if (n == 1)
+            return arr[0];
+        return Math.min(arr[n - 1], arrayMin(arr, n - 1));
     }
 
     /**
@@ -285,8 +296,12 @@ public class EasyRecursionProblems {
      * Output: false
      */
     static public boolean isSorted(int[] arr, int n) {
-        // Your code here
-        return false;
+        if (n <= 1)
+            return true;
+        if (arr[n - 2] >= arr[n - 1]) {
+            return false;
+        }
+        return isSorted(arr, n - 1);
     }
 
     /**
@@ -306,8 +321,11 @@ public class EasyRecursionProblems {
      * Output: false
      */
     static public boolean linearSearch(int[] arr, int n, int key) {
-        // Your code here
-        return false;
+        if (n <= 0)
+            return false;
+        if (arr[n - 1] == key)
+            return true;
+        return linearSearch(arr, n - 1, key);
     }
 
     /**
@@ -325,9 +343,13 @@ public class EasyRecursionProblems {
      * Input: arr = [10, 20, 30], n = 3, key = 40
      * Output: -1
      */
-    static public int firstIndex(int[] arr, int n, int key) {
-        // Your code here
-        return -1;
+    static public int firstIndex(int[] arr, int i, int key) {
+        int n = arr.length;
+        if (i >= n)
+            return -1;
+        if (arr[i] == key)
+            return i;
+        return firstIndex(arr, i + 1, key);
     }
 
     /**
@@ -346,8 +368,11 @@ public class EasyRecursionProblems {
      * Output: -1
      */
     static public int lastIndex(int[] arr, int n, int key) {
-        // Your code here
-        return -1;
+        if (n <= 0)
+            return -1;
+        if (arr[n - 1] == key)
+            return n - 1;
+        return lastIndex(arr, n - 1, key);
     }
 
     /**
@@ -365,8 +390,10 @@ public class EasyRecursionProblems {
      * Output: 1
      */
     static public int countOccurrences(int[] arr, int n, int key) {
-        // Your code here
-        return 0;
+        if (n <= 0)
+            return 0;
+        int add = (arr[n - 1] == key) ? 1 : 0;
+        return add + countOccurrences(arr, n - 1, key);
     }
 
     /**
@@ -652,5 +679,66 @@ public class EasyRecursionProblems {
         int n8 = 9;
         System.out.print(" nth fibonacci number is: " + fibonacci(n8));
         System.out.println();
+
+        // Q9
+        System.out.print("Q9 --> ");
+        int n9 = 5;
+        printNumbers(n9);
+        System.out.println();
+
+        // Q10
+        System.out.print("Q10 --> ");
+        int n10 = 5;
+        printReverse(n10);
+        System.out.println();
+
+        // Q11
+        System.out.print("Q11 -->");
+        int[] arr11 = { 1, 2, 3, 4, 5, 6 };
+        System.out.print(" Sum of array is: " + arraySum(arr11, arr11.length));
+        System.out.println();
+
+        // Q12
+        System.out.print("Q12 -->");
+        int[] arr12 = { 1, 9, 5, 48, 49, 3, 1 };
+        System.out.print(" Max element is: " + arrayMax(arr12, arr12.length));
+        System.out.println();
+
+        // Q13
+        System.out.print("Q13 -->");
+        int[] arr13 = { 1, 9, 5, 48, 49, 3, 6 };
+        System.out.print(" Min element is: " + arrayMin(arr13, arr13.length));
+        System.out.println();
+
+        // Q14
+        System.out.print("Q14 -->");
+        int[] arr14 = { 1, 2, 3, 4, 5, 6, 7, 8, 1 };
+        System.out.print(" Is array sorted: " + isSorted(arr14, arr14.length));
+        System.out.println();
+
+        // Q15
+        System.out.print("Q15 -->");
+        int[] arr15 = { 1, 2, 3, 4, 5, 6, 7, 8, 21 };
+        System.out.print(" Is key present: " + linearSearch(arr15, arr15.length, 1));
+        System.out.println();
+
+        // Q16
+        System.out.print("Q16 -->");
+        int[] arr16 = { 1, 2, 3, 2, 4, 6, 2 };
+        System.out.print(" First occurance at idx: " + firstIndex(arr16, 0, 6));
+        System.out.println();
+
+        // Q17
+        System.out.print("Q17 -->");
+        int[] arr17 = { 1, 2, 3, 2, 3, 4, 6, 2 };
+        System.out.print(" Last occurance at idx: " + lastIndex(arr17, arr17.length, 3));
+        System.out.println();
+
+        // Q18
+        System.out.print("Q18 -->");
+        int[] arr18 = { 1, 2, 3, 2, 3, 4, 6, 2 };
+        System.out.print(" Total occurance are: " + countOccurrences(arr18, arr18.length, 2));
+        System.out.println();
+
     }
 }
