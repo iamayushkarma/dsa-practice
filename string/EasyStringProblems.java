@@ -722,5 +722,6 @@ public class EasyStringProblems {
         System.out.println("Q14 --> " + concatenate("visca", " barca"));
 
         System.out.println("Q15 --> " + areEqual("acc", "abc"));
+
     }
 }
