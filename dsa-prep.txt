@@ -60,7 +60,6 @@ WEEK 1 (Day 1–7) — Arrays, Two Pointers, Hashing
   - 217. Contains Duplicate (Easy)
   - 238. Product of Array Except Self (Medium)
   - 53.  Maximum Subarray — Kadane's Algo (Medium)
-  - 56.  Merge Intervals (Medium)
   - 75.  Sort Colors — Dutch National Flag (Medium)
   - 31.  Next Permutation (Medium)
   - 48.  Rotate Image (Medium)
