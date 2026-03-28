@@ -10,7 +10,7 @@ public class ContainsDuplicate {
      * Pattern : Hashing
      * Difficulty : Easy
      * Date Solved: 25-03-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * Optimal Approach:
      * Using HashSet for check is HashSet already has that value it will return true

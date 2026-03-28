@@ -9,7 +9,7 @@ public class TwoSum {
      * Pattern : Hashing
      * Difficulty : Easy
      * Date Solved: 25-03-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Approach:
      * brute force approch is the run nested loops using i and j and check for

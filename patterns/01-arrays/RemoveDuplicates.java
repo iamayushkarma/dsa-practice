@@ -8,7 +8,7 @@ public class RemoveDuplicates {
      * Pattern : Two Pointers
      * Difficulty : Easy
      * Date Solved: 25-03-2025
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Approach:
      * I was trying to solve it with two pointer i and j with two loops but coudn't
