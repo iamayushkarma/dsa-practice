@@ -67,7 +67,7 @@ WEEK 1 (Day 1–7) — Arrays, Two Pointers, Hashing
   TOPIC: Two Pointers
   -------------------
   LeetCode Problems:
-  - 167. Two Sum II (Easy)
+  - 167. Two Sum II (Medium)
   - 125. Valid Palindrome (Easy)
   - 15.  3Sum (Medium)
   - 11.  Container With Most Water (Medium)
