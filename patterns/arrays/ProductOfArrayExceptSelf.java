@@ -8,7 +8,7 @@ public class ProductOfArrayExceptSelf {
      * Pattern : Prefixsum
      * Difficulty : Medium
      * Date Solved: 26-03-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Approach:
      * First i tryed to use two loops and inside loop skip if i and j are equal it

@@ -8,7 +8,7 @@ public class NextPermutation {
      * Pattern : Greedy / Array Manipulation
      * Difficulty : Medium
      * Date Solved: 28-03-2026
-     * Revision : [] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * Optimal Approach:
      * 1. Traverse from right and find first decreasing element (pivot)

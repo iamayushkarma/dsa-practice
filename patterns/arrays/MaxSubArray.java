@@ -7,7 +7,7 @@ public interface MaxSubArray {
      * Pattern : Dynamic Programming (Greedy variant)
      * Difficulty : Medium
      * Date Solved: 26-03-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Approach:
      * Used Kadane's algorithm

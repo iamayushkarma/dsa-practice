@@ -6,7 +6,7 @@ public class RotateImage {
      * Pattern : 2D Array
      * Difficulty : Medium
      * Date Solved: 29-03-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * Optimal Approach:
      * First make transpose of the matrix, then reverse each row via for loop which

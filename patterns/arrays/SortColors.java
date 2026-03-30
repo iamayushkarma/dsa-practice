@@ -8,7 +8,7 @@ public class SortColors {
      * Pattern : Dutch National Flag (3-pointer)
      * Difficulty : Medium
      * Date Solved: 26-03-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Approach:
      * Used Dutch National Flag algorithm with 3 pointers (low, mid, high)
