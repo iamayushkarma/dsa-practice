@@ -39,7 +39,7 @@ public class ValidPalindrome {
     }
 
     public static void main(String[] args) {
-        String str = "Markram";
+        String str = "Markrama";
         System.out.println("Is string palindrome: " + checkPalindrome(str));
     }
 }
