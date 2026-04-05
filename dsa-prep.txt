@@ -1,12 +1,14 @@
 ================================================================
      DSA PREP ROADMAP — 6 TO 12 LPA JOB CRACKING GUIDE
-         Current: 85 Problems | Target: 400 by End of May
+        300 UNIQUE PROBLEMS | INDIA PLACEMENT FOCUSED
 ================================================================
-Start Date    : March 25, 2026
-End Date      : May 31, 2026
-Total Days    : ~67 days
-Problems Left : 315
+Start Date    : April 5, 2026
+End Date      : June 15, 2026
+Total Days    : ~71 days
+Total Problems: 300 unique problems
 Daily Target  : 4-5 problems (with buffer days built in)
+================================================================
+
 
 ================================================================
 SECTION 1 — MINDSET RULES (READ EVERY MORNING)
@@ -19,24 +21,26 @@ SECTION 1 — MINDSET RULES (READ EVERY MORNING)
 6. Take mock interviews. DSA alone won't get you hired.
 7. Your goal is not rank. Your goal is a job.
 
+
 ================================================================
 SECTION 2 — THE 15 CORE PATTERNS YOU MUST MASTER
 ================================================================
-1.  Arrays & Basic Iteration
-2.  Two Pointers
-3.  Sliding Window
-4.  Hashing / HashMap / HashSet
-5.  Binary Search
-6.  Recursion & Backtracking
-7.  Sorting-based problems
-8.  Stack & Monotonic Stack
-9.  Queue & Deque
-10. Linked List
-11. Trees (BFS + DFS)
-12. Heaps / Priority Queue
-13. Greedy
-14. Dynamic Programming (Basic to Medium only)
-15. Graphs (Basic — BFS/DFS only for 6-12 LPA)
+ 1.  Arrays & Basic Iteration
+ 2.  Two Pointers
+ 3.  Sliding Window
+ 4.  Hashing / HashMap / HashSet
+ 5.  Binary Search
+ 6.  Recursion & Backtracking
+ 7.  Sorting-based problems
+ 8.  Stack & Monotonic Stack
+ 9.  Queue & Deque
+10.  Linked List
+11.  Trees (BFS + DFS)
+12.  Heaps / Priority Queue
+13.  Greedy
+14.  Dynamic Programming (Basic to Medium only)
+15.  Graphs (Basic — BFS/DFS only for 6-12 LPA)
+
 
 ================================================================
 SECTION 3 — PHASE-WISE PLAN
@@ -44,213 +48,407 @@ SECTION 3 — PHASE-WISE PLAN
 
 ------------------------------------------------------------
 PHASE 1 — Foundation + Core Patterns
-Duration : Day 1 to Day 20 (March 25 – April 13)
-Target   : Reach 180 total problems solved
-Daily    : 4 new + 1 revision
+Duration : Day 1 to Day 22 (April 5 – April 26)
+Target   : 110 problems solved
+Daily    : 5 new problems
 ------------------------------------------------------------
 
 WEEK 1 (Day 1–7) — Arrays, Two Pointers, Hashing
+==================================================
 
-  TOPIC: Arrays
-  ---------------
-  LeetCode Problems:
-  - 1.   Two Sum (Easy)
-  - 26.  Remove Duplicates from Sorted Array (Easy)
-  - 121. Best Time to Buy and Sell Stock (Easy)
-  - 217. Contains Duplicate (Easy)
-  - 238. Product of Array Except Self (Medium)
-  - 53.  Maximum Subarray — Kadane's Algo (Medium)
-  - 75.  Sort Colors — Dutch National Flag (Medium)
-  - 31.  Next Permutation (Medium)
-  - 48.  Rotate Image (Medium)
+  TOPIC: Arrays (15 Problems)
+  ----------------------------
+  LC  1.   Two Sum (Easy)
+  LC  26.  Remove Duplicates from Sorted Array (Easy)
+  LC  80.  Remove Duplicates from Sorted Array II (Medium)
+  LC  121. Best Time to Buy and Sell Stock (Easy)
+  LC  122. Best Time to Buy and Sell Stock II (Medium)
+  LC  217. Contains Duplicate (Easy)
+  LC  238. Product of Array Except Self (Medium)
+  LC  53.  Maximum Subarray — Kadane's Algorithm (Medium)
+  LC  75.  Sort Colors — Dutch National Flag (Medium)
+  LC  31.  Next Permutation (Medium)
+  LC  48.  Rotate Image (Medium)
+  LC  54.  Spiral Matrix (Medium)
+  LC  56.  Merge Intervals (Medium)
+  LC  57.  Insert Interval (Medium)
+  LC  169. Majority Element (Easy)
 
-  TOPIC: Two Pointers
-  -------------------
-  LeetCode Problems:
-  - 167. Two Sum II (Medium)
-  - 125. Valid Palindrome (Easy)
-  - 15.  3Sum (Medium)
-  - 11.  Container With Most Water (Medium)
-  - 42.  Trapping Rain Water (Hard — important pattern)
+  TOPIC: Two Pointers (8 Problems)
+  ----------------------------------
+  LC  167. Two Sum II — Input Array Is Sorted (Medium)
+  LC  125. Valid Palindrome (Easy)
+  LC  15.  3Sum (Medium)
+  LC  18.  4Sum (Medium)
+  LC  11.  Container With Most Water (Medium)
+  LC  42.  Trapping Rain Water (Hard — important pattern)
+  LC  283. Move Zeroes (Easy)
+  LC  977. Squares of a Sorted Array (Easy)
 
-  TOPIC: Hashing
-  --------------
-  LeetCode Problems:
-  - 242. Valid Anagram (Easy)
-  - 49.  Group Anagrams (Medium)
-  - 347. Top K Frequent Elements (Medium)
-  - 128. Longest Consecutive Sequence (Medium)
-  - 560. Subarray Sum Equals K (Medium)
+  TOPIC: Hashing (10 Problems)
+  ------------------------------
+  LC  242. Valid Anagram (Easy)
+  LC  49.  Group Anagrams (Medium)
+  LC  347. Top K Frequent Elements (Medium)
+  LC  128. Longest Consecutive Sequence (Medium)
+  LC  560. Subarray Sum Equals K (Medium)
+  LC  523. Continuous Subarray Sum (Medium)
+  LC  525. Contiguous Array (Medium)
+  LC  36.  Valid Sudoku (Medium)
+  LC  299. Bulls and Cows (Medium)
+  LC  387. First Unique Character in a String (Easy)
+
 
 WEEK 2 (Day 8–14) — Sliding Window, Binary Search
+===================================================
 
-  TOPIC: Sliding Window
-  ---------------------
-  LeetCode Problems:
-  - 643. Maximum Average Subarray I (Easy)
-  - 3.   Longest Substring Without Repeating Characters (Medium)
-  - 424. Longest Repeating Character Replacement (Medium)
-  - 567. Permutation in String (Medium)
-  - 76.  Minimum Window Substring (Hard — must know)
-  - 239. Sliding Window Maximum (Hard)
+  TOPIC: Sliding Window (10 Problems)
+  -------------------------------------
+  LC  643. Maximum Average Subarray I (Easy)
+  LC  3.   Longest Substring Without Repeating Characters (Medium)
+  LC  424. Longest Repeating Character Replacement (Medium)
+  LC  567. Permutation in String (Medium)
+  LC  76.  Minimum Window Substring (Hard — must know)
+  LC  239. Sliding Window Maximum (Hard)
+  LC  438. Find All Anagrams in a String (Medium)
+  LC  904. Fruit Into Baskets (Medium)
+  LC  1004.Max Consecutive Ones III (Medium)
+  LC  1208.Get Equal Substrings Within Budget (Medium)
 
-  TOPIC: Binary Search
-  --------------------
-  LeetCode Problems:
-  - 704. Binary Search (Easy)
-  - 35.  Search Insert Position (Easy)
-  - 153. Find Minimum in Rotated Sorted Array (Medium)
-  - 33.  Search in Rotated Sorted Array (Medium)
-  - 74.  Search a 2D Matrix (Medium)
-  - 162. Find Peak Element (Medium)
-  - 1011. Capacity to Ship Packages (Medium — Binary Search on answer)
-  - 410. Split Array Largest Sum (Hard — important)
+  TOPIC: Binary Search (15 Problems)
+  ------------------------------------
+  LC  704. Binary Search (Easy)
+  LC  35.  Search Insert Position (Easy)
+  LC  374. Guess Number Higher or Lower (Easy)
+  LC  153. Find Minimum in Rotated Sorted Array (Medium)
+  LC  154. Find Minimum in Rotated Sorted Array II (Hard)
+  LC  33.  Search in Rotated Sorted Array (Medium)
+  LC  81.  Search in Rotated Sorted Array II (Medium)
+  LC  74.  Search a 2D Matrix (Medium)
+  LC  240. Search a 2D Matrix II (Medium)
+  LC  162. Find Peak Element (Medium)
+  LC  1011.Capacity to Ship Packages Within D Days (Medium)
+  LC  410. Split Array Largest Sum (Hard — important)
+  LC  875. Koko Eating Bananas (Medium)
+  LC  1283.Find the Smallest Divisor Given a Threshold (Medium)
+  LC  34.  Find First and Last Position of Element (Medium)
 
-WEEK 3 (Day 15–20) — Stack, Queue, Recursion Basics
 
-  TOPIC: Stack
-  ------------
-  LeetCode Problems:
-  - 20.  Valid Parentheses (Easy)
-  - 155. Min Stack (Medium)
-  - 150. Evaluate Reverse Polish Notation (Medium)
-  - 739. Daily Temperatures (Medium — Monotonic Stack)
-  - 84.  Largest Rectangle in Histogram (Hard — Monotonic Stack)
-  - 496. Next Greater Element I (Easy)
-  - 503. Next Greater Element II (Medium)
+WEEK 3 (Day 15–22) — Stack, Queue, Recursion Basics, Strings
+=============================================================
 
-  TOPIC: Recursion Basics
-  -----------------------
-  LeetCode Problems:
-  - 509. Fibonacci Number (Easy)
-  - 206. Reverse Linked List (Easy — iterative + recursive)
-  - 344. Reverse String (Easy)
-  - 21.  Merge Two Sorted Lists (Easy)
-  - 50.  Pow(x, n) (Medium)
+  TOPIC: Stack & Monotonic Stack (12 Problems)
+  ----------------------------------------------
+  LC  20.  Valid Parentheses (Easy)
+  LC  155. Min Stack (Medium)
+  LC  150. Evaluate Reverse Polish Notation (Medium)
+  LC  739. Daily Temperatures (Medium — Monotonic Stack)
+  LC  84.  Largest Rectangle in Histogram (Hard — Monotonic Stack)
+  LC  496. Next Greater Element I (Easy)
+  LC  503. Next Greater Element II (Medium)
+  LC  85.  Maximal Rectangle (Hard — uses histogram approach)
+  LC  394. Decode String (Medium)
+  LC  1047.Remove All Adjacent Duplicates In String (Easy)
+  LC  735. Asteroid Collision (Medium)
+  LC  901. Online Stock Span (Medium)
+
+  TOPIC: Queue & Deque (4 Problems)
+  -----------------------------------
+  LC  933. Number of Recent Calls (Easy)
+  LC  649. Dota2 Senate (Medium)
+  LC  950. Reveal Cards In Increasing Order (Medium)
+  LC  1700.Number of Students Unable to Eat Lunch (Easy)
+
+  TOPIC: Recursion Basics (6 Problems)
+  --------------------------------------
+  LC  509. Fibonacci Number (Easy)
+  LC  344. Reverse String (Easy)
+  LC  50.  Pow(x, n) (Medium)
+  LC  779. K-th Symbol in Grammar (Medium)
+  LC  1823.Find the Winner of the Circular Game (Medium)
+  LC  241. Different Ways to Add Parentheses (Medium)
+
+  TOPIC: Strings — Patterns & Manipulation (10 Problems)
+  --------------------------------------------------------
+  LC  14.  Longest Common Prefix (Easy)
+  LC  151. Reverse Words in a String (Medium)
+  LC  8.   String to Integer (atoi) (Medium)
+  LC  28.  Find the Index of the First Occurrence in a String (Easy)
+  LC  459. Repeated Substring Pattern (Easy)
+  LC  796. Rotate String (Easy)
+  LC  43.  Multiply Strings (Medium)
+  LC  6.   Zigzag Conversion (Medium)
+  LC  93.  Restore IP Addresses (Medium)
+  LC  71.  Simplify Path (Medium)
+
 
 ------------------------------------------------------------
 PHASE 2 — Intermediate DSA
-Duration : Day 21 to Day 45 (April 14 – May 8)
-Target   : Reach 300 total problems solved
-Daily    : 4 problems + 2 revisions
+Duration : Day 23 to Day 48 (April 27 – May 22)
+Target   : 190 problems solved (80 new in this phase)
+Daily    : 3-4 problems
 ------------------------------------------------------------
 
-WEEK 4–5 (Day 21–35) — Linked List, Trees
+WEEK 4–5 (Day 23–36) — Linked List & Binary Trees
+===================================================
 
-  TOPIC: Linked List
-  ------------------
-  LeetCode Problems:
-  - 141. Linked List Cycle (Easy)
-  - 142. Linked List Cycle II (Medium)
-  - 19.  Remove Nth Node From End of List (Medium)
-  - 143. Reorder List (Medium)
-  - 23.  Merge K Sorted Lists (Hard)
-  - 148. Sort List (Medium)
-  - 2.   Add Two Numbers (Medium)
-  - 138. Copy List with Random Pointer (Medium)
-  - 25.  Reverse Nodes in K-Group (Hard)
+  TOPIC: Linked List (15 Problems)
+  ----------------------------------
+  LC  206. Reverse Linked List (Easy — iterative + recursive)
+  LC  21.  Merge Two Sorted Lists (Easy)
+  LC  141. Linked List Cycle (Easy)
+  LC  142. Linked List Cycle II (Medium)
+  LC  19.  Remove Nth Node From End of List (Medium)
+  LC  143. Reorder List (Medium)
+  LC  23.  Merge K Sorted Lists (Hard)
+  LC  148. Sort List (Medium)
+  LC  2.   Add Two Numbers (Medium)
+  LC  445. Add Two Numbers II (Medium)
+  LC  138. Copy List with Random Pointer (Medium)
+  LC  25.  Reverse Nodes in K-Group (Hard)
+  LC  82.  Remove Duplicates from Sorted List II (Medium)
+  LC  61.  Rotate List (Medium)
+  LC  86.  Partition List (Medium)
 
-  TOPIC: Binary Trees
-  -------------------
-  LeetCode Problems:
-  - 104. Maximum Depth of Binary Tree (Easy)
-  - 226. Invert Binary Tree (Easy)
-  - 543. Diameter of Binary Tree (Easy)
-  - 110. Balanced Binary Tree (Easy)
-  - 100. Same Tree (Easy)
-  - 572. Subtree of Another Tree (Easy)
-  - 102. Binary Tree Level Order Traversal (Medium) — BFS
-  - 199. Binary Tree Right Side View (Medium)
-  - 1448.Count Good Nodes in Binary Tree (Medium)
-  - 98.  Validate Binary Search Tree (Medium)
-  - 230. Kth Smallest Element in BST (Medium)
-  - 105. Construct Tree from Preorder and Inorder (Medium)
-  - 124. Binary Tree Maximum Path Sum (Hard)
-  - 297. Serialize and Deserialize Binary Tree (Hard)
+  TOPIC: Binary Trees — Basics & DFS (18 Problems)
+  --------------------------------------------------
+  LC  104. Maximum Depth of Binary Tree (Easy)
+  LC  111. Minimum Depth of Binary Tree (Easy)
+  LC  226. Invert Binary Tree (Easy)
+  LC  543. Diameter of Binary Tree (Easy)
+  LC  110. Balanced Binary Tree (Easy)
+  LC  100. Same Tree (Easy)
+  LC  572. Subtree of Another Tree (Easy)
+  LC  112. Path Sum (Easy)
+  LC  113. Path Sum II (Medium)
+  LC  437. Path Sum III (Medium)
+  LC  129. Sum Root to Leaf Numbers (Medium)
+  LC  236. Lowest Common Ancestor of a Binary Tree (Medium)
+  LC  235. Lowest Common Ancestor of a BST (Medium)
+  LC  1448.Count Good Nodes in Binary Tree (Medium)
+  LC  98.  Validate Binary Search Tree (Medium)
+  LC  230. Kth Smallest Element in a BST (Medium)
+  LC  124. Binary Tree Maximum Path Sum (Hard)
+  LC  297. Serialize and Deserialize Binary Tree (Hard)
 
-WEEK 6–7 (Day 36–45) — Heap, Greedy, Backtracking
+  TOPIC: Binary Trees — BFS / Level Order (8 Problems)
+  ------------------------------------------------------
+  LC  102. Binary Tree Level Order Traversal (Medium)
+  LC  107. Binary Tree Level Order Traversal II (Medium)
+  LC  103. Binary Tree Zigzag Level Order Traversal (Medium)
+  LC  199. Binary Tree Right Side View (Medium)
+  LC  116. Populating Next Right Pointers in Each Node (Medium)
+  LC  117. Populating Next Right Pointers in Each Node II (Medium)
+  LC  637. Average of Levels in Binary Tree (Easy)
+  LC  515. Find Largest Value in Each Tree Row (Medium)
 
-  TOPIC: Heap / Priority Queue
+  TOPIC: BST & Tree Construction (5 Problems)
+  ---------------------------------------------
+  LC  105. Construct Binary Tree from Preorder and Inorder Traversal (Medium)
+  LC  106. Construct Binary Tree from Inorder and Postorder Traversal (Medium)
+  LC  108. Convert Sorted Array to Binary Search Tree (Easy)
+  LC  450. Delete Node in a BST (Medium)
+  LC  701. Insert into a Binary Search Tree (Medium)
+
+
+WEEK 6–7 (Day 37–48) — Heap, Greedy, Backtracking
+====================================================
+
+  TOPIC: Heap / Priority Queue (10 Problems)
+  --------------------------------------------
+  LC  703. Kth Largest Element in a Stream (Easy)
+  LC  215. Kth Largest Element in an Array (Medium)
+  LC  973. K Closest Points to Origin (Medium)
+  LC  355. Design Twitter (Medium)
+  LC  295. Find Median from Data Stream (Hard)
+  LC  347. Top K Frequent Elements (Medium — revisit with heap)
+  LC  378. Kth Smallest Element in a Sorted Matrix (Medium)
+  LC  1046.Last Stone Weight (Easy)
+  LC  621. Task Scheduler (Medium)
+  LC  502. IPO (Hard — Two Heaps)
+
+  TOPIC: Greedy (10 Problems)
   ----------------------------
-  LeetCode Problems:
-  - 703. Kth Largest Element in a Stream (Easy)
-  - 215. Kth Largest Element in Array (Medium)
-  - 973. K Closest Points to Origin (Medium)
-  - 355. Design Twitter (Medium)
-  - 295. Find Median from Data Stream (Hard)
+  LC  455. Assign Cookies (Easy)
+  LC  860. Lemonade Change (Easy)
+  LC  55.  Jump Game (Medium)
+  LC  45.  Jump Game II (Medium)
+  LC  134. Gas Station (Medium)
+  LC  435. Non-overlapping Intervals (Medium)
+  LC  763. Partition Labels (Medium)
+  LC  452. Minimum Number of Arrows to Burst Balloons (Medium)
+  LC  56.  Merge Intervals (Medium — revisit greedy view)
+  LC  1029.Two City Scheduling (Medium)
 
-  TOPIC: Greedy
-  -------------
-  LeetCode Problems:
-  - 455. Assign Cookies (Easy)
-  - 53.  Maximum Subarray (already done — revisit greedy view)
-  - 55.  Jump Game (Medium)
-  - 45.  Jump Game II (Medium)
-  - 134. Gas Station (Medium)
-  - 435. Non-overlapping Intervals (Medium)
-  - 763. Partition Labels (Medium)
+  TOPIC: Backtracking (14 Problems)
+  -----------------------------------
+  LC  78.  Subsets (Medium)
+  LC  90.  Subsets II (Medium)
+  LC  46.  Permutations (Medium)
+  LC  47.  Permutations II (Medium)
+  LC  39.  Combination Sum (Medium)
+  LC  40.  Combination Sum II (Medium)
+  LC  216. Combination Sum III (Medium)
+  LC  131. Palindrome Partitioning (Medium)
+  LC  51.  N-Queens (Hard — good for practice)
+  LC  52.  N-Queens II (Hard)
+  LC  79.  Word Search (Medium)
+  LC  212. Word Search II (Hard — Backtracking + Trie)
+  LC  17.  Letter Combinations of a Phone Number (Medium)
+  LC  22.  Generate Parentheses (Medium)
 
-  TOPIC: Backtracking
-  -------------------
-  LeetCode Problems:
-  - 78.  Subsets (Medium)
-  - 90.  Subsets II (Medium)
-  - 46.  Permutations (Medium)
-  - 47.  Permutations II (Medium)
-  - 39.  Combination Sum (Medium)
-  - 40.  Combination Sum II (Medium)
-  - 131. Palindrome Partitioning (Medium)
-  - 51.  N-Queens (Hard — good for practice)
-  - 79.  Word Search (Medium)
 
 ------------------------------------------------------------
 PHASE 3 — Advanced Patterns + Interview Mode
-Duration : Day 46 to Day 67 (May 9 – May 31)
-Target   : 400+ problems, timed practice, mock interviews
+Duration : Day 49 to Day 71 (May 23 – June 15)
+Target   : 300 total problems, timed practice, mock interviews
 Daily    : 2 timed new + 2 revisions + mock every 2-3 days
 ------------------------------------------------------------
 
-WEEK 8–9 (Day 46–58) — DP + Graphs
+WEEK 8–9 (Day 49–62) — Dynamic Programming + Graphs
+=====================================================
 
-  TOPIC: Dynamic Programming (Basic to Medium only)
-  --------------------------------------------------
-  LeetCode Problems (START HERE — easy DP):
-  - 70.  Climbing Stairs (Easy)
-  - 746. Min Cost Climbing Stairs (Easy)
-  - 198. House Robber (Medium)
-  - 213. House Robber II (Medium)
-  - 5.   Longest Palindromic Substring (Medium)
-  - 647. Palindromic Substrings (Medium)
-  - 91.  Decode Ways (Medium)
-  - 322. Coin Change (Medium) — must master
-  - 152. Maximum Product Subarray (Medium)
-  - 139. Word Break (Medium)
-  - 300. Longest Increasing Subsequence (Medium)
-  - 416. Partition Equal Subset Sum (Medium)
-  - 1143.Longest Common Subsequence (Medium)
-  - 62.  Unique Paths (Medium)
-  - 72.  Edit Distance (Medium — stretch goal)
+  TOPIC: Dynamic Programming — 1D (15 Problems)
+  -----------------------------------------------
+  LC  70.  Climbing Stairs (Easy)
+  LC  746. Min Cost Climbing Stairs (Easy)
+  LC  198. House Robber (Medium)
+  LC  213. House Robber II (Medium)
+  LC  337. House Robber III (Medium — Tree DP)
+  LC  91.  Decode Ways (Medium)
+  LC  322. Coin Change (Medium) — must master
+  LC  518. Coin Change II (Medium)
+  LC  139. Word Break (Medium)
+  LC  152. Maximum Product Subarray (Medium)
+  LC  300. Longest Increasing Subsequence (Medium)
+  LC  673. Number of Longest Increasing Subsequence (Medium)
+  LC  416. Partition Equal Subset Sum (Medium)
+  LC  279. Perfect Squares (Medium)
+  LC  1137.N-th Tribonacci Number (Easy)
 
-  TOPIC: Graphs (Basic BFS/DFS only)
-  -----------------------------------
-  LeetCode Problems:
-  - 200. Number of Islands (Medium) — must know
-  - 695. Max Area of Island (Medium)
-  - 133. Clone Graph (Medium)
-  - 417. Pacific Atlantic Water Flow (Medium)
-  - 130. Surrounded Regions (Medium)
-  - 207. Course Schedule (Medium) — Topological Sort
-  - 210. Course Schedule II (Medium)
-  - 684. Redundant Connection (Medium — Union Find)
-  - 127. Word Ladder (Hard — BFS)
+  TOPIC: Dynamic Programming — 2D / Strings (12 Problems)
+  ---------------------------------------------------------
+  LC  5.   Longest Palindromic Substring (Medium)
+  LC  647. Palindromic Substrings (Medium)
+  LC  1143.Longest Common Subsequence (Medium)
+  LC  1035.Uncrossed Lines (Medium)
+  LC  62.  Unique Paths (Medium)
+  LC  63.  Unique Paths II (Medium)
+  LC  64.  Minimum Path Sum (Medium)
+  LC  72.  Edit Distance (Medium — stretch goal)
+  LC  97.  Interleaving String (Hard — stretch goal)
+  LC  115. Distinct Subsequences (Hard — stretch goal)
+  LC  309. Best Time to Buy and Sell Stock with Cooldown (Medium)
+  LC  714. Best Time to Buy and Sell Stock with Transaction Fee (Medium)
 
-WEEK 10 (Day 59–67) — Interview Mode
+  TOPIC: Graphs — BFS / DFS (18 Problems)
+  -----------------------------------------
+  LC  200. Number of Islands (Medium) — must know
+  LC  695. Max Area of Island (Medium)
+  LC  133. Clone Graph (Medium)
+  LC  417. Pacific Atlantic Water Flow (Medium)
+  LC  130. Surrounded Regions (Medium)
+  LC  994. Rotting Oranges (Medium) — Multi-source BFS
+  LC  286. Walls and Gates (Medium) — Multi-source BFS
+  LC  1020.Number of Enclaves (Medium)
+  LC  207. Course Schedule (Medium) — Topological Sort
+  LC  210. Course Schedule II (Medium)
+  LC  684. Redundant Connection (Medium — Union Find)
+  LC  127. Word Ladder (Hard — BFS)
+  LC  323. Number of Connected Components in Undirected Graph (Medium)
+  LC  261. Graph Valid Tree (Medium)
+  LC  743. Network Delay Time (Medium — Dijkstra)
+  LC  787. Cheapest Flights Within K Stops (Medium)
+  LC  547. Number of Provinces (Medium — Union Find / DFS)
+  LC  1091.Shortest Path in Binary Matrix (Medium — BFS)
 
-  - Full timed sessions: 2 problems in 45 min
-  - Revisit all weak areas from your tracking sheet
-  - Solve 5 company-specific questions (check Glassdoor/LeetCode)
-  - 3 mock interviews (with a friend or pramp.com)
-  - Practice explaining solutions out loud
+
+WEEK 10 (Day 63–71) — Trie, Math, Bit Manipulation & Interview Mode
+=====================================================================
+
+  TOPIC: Trie (5 Problems)
+  --------------------------
+  LC  208. Implement Trie (Prefix Tree) (Medium)
+  LC  211. Design Add and Search Words Data Structure (Medium)
+  LC  648. Replace Words (Medium)
+  LC  720. Longest Word in Dictionary (Medium)
+  LC  1268.Search Suggestions System (Medium)
+
+  TOPIC: Math & Number Theory (8 Problems)
+  ------------------------------------------
+  LC  231. Power of Two (Easy)
+  LC  191. Number of 1 Bits (Easy)
+  LC  338. Counting Bits (Easy)
+  LC  190. Reverse Bits (Easy)
+  LC  268. Missing Number (Easy)
+  LC  371. Sum of Two Integers (Medium — Bit Manipulation)
+  LC  7.   Reverse Integer (Medium)
+  LC  9.   Palindrome Number (Easy)
+
+  TOPIC: Design & Data Structures (10 Problems)
+  -----------------------------------------------
+  LC  146. LRU Cache (Medium) — very commonly asked
+  LC  380. Insert Delete GetRandom O(1) (Medium)
+  LC  295. Find Median from Data Stream (Hard — already listed, revise)
+  LC  341. Flatten Nested List Iterator (Medium)
+  LC  284. Peeking Iterator (Medium)
+  LC  155. Min Stack (Medium — revisit for design clarity)
+  LC  232. Implement Queue using Stacks (Easy)
+  LC  225. Implement Stack using Queues (Easy)
+  LC  706. Design HashMap (Easy)
+  LC  705. Design HashSet (Easy)
+
+  TOPIC: Sorting Algorithms (Understand + Code From Scratch)
+  -----------------------------------------------------------
+  These are theory + implementation problems. Write each from scratch:
+  -  Bubble Sort
+  -  Selection Sort
+  -  Insertion Sort
+  -  Merge Sort           (also LC 912 — Sort an Array Medium)
+  -  Quick Sort           (also LC 912)
+  -  Counting Sort        (use in LC 75 Sort Colors)
+  -  LC 147. Insertion Sort List (Medium)
+  -  LC 315. Count of Smaller Numbers After Self (Hard — Merge Sort)
+
+  Interview Mode (Day 63–71):
+  ----------------------------
+  -  Full timed sessions: 2 problems in 45 min
+  -  Revisit all weak areas from tracking sheet
+  -  Solve 5 company-specific questions (Glassdoor / LeetCode company tags)
+  -  3 mock interviews (with a friend or pramp.com)
+  -  Practice explaining solutions OUT LOUD after every solve
+
+
+================================================================
+PROBLEM COUNT SUMMARY BY TOPIC
+================================================================
+Arrays                     : 15 problems
+Two Pointers               : 8 problems
+Hashing                    : 10 problems
+Sliding Window             : 10 problems
+Binary Search              : 15 problems
+Stack & Monotonic Stack    : 12 problems
+Queue & Deque              : 4 problems
+Recursion Basics           : 6 problems
+Strings                    : 10 problems
+Linked List                : 15 problems
+Binary Trees (DFS)         : 18 problems
+Binary Trees (BFS)         : 8 problems
+BST & Tree Construction    : 5 problems
+Heap / Priority Queue      : 10 problems
+Greedy                     : 10 problems
+Backtracking               : 14 problems
+Dynamic Programming (1D)   : 15 problems
+Dynamic Programming (2D)   : 12 problems
+Graphs                     : 18 problems
+Trie                       : 5 problems
+Math & Bit Manipulation    : 8 problems
+Design                     : 10 problems
+Sorting (scratch)          : 8 problems
+------------------------------------------
+TOTAL                      : 300 UNIQUE PROBLEMS
+================================================================
+
 
 ================================================================
 SECTION 4 — DAILY SCHEDULE (5–6 Hours/Day)
@@ -265,6 +463,7 @@ Time Block     Task
 4:30 – 5:00   Note patterns in tracking sheet
 5:00 – 6:00   New Problem 3/4 (if energy allows) OR Read theory
 
+
 ================================================================
 SECTION 5 — SPACED REPETITION REVISION SYSTEM
 ================================================================
@@ -277,16 +476,20 @@ After solving a problem:
 Use your tracking sheet to log revision dates.
 If you fail a revision → reset the clock to Day 0.
 
+
 ================================================================
-SECTION 6 — TRACKING SHEET FORMAT (make this in Excel/Sheets)
+SECTION 6 — TRACKING SHEET FORMAT (Excel/Google Sheets)
 ================================================================
-Problem No | Name | Pattern | Difficulty | First Solved | R1 (Day 3) | R2 (Day 7) | R3 (Day 14) | Mistake/Note
+Problem No | Name | Pattern | Difficulty | First Solved |
+R1 (Day 3) | R2 (Day 7) | R3 (Day 14) | Mistake/Note
 
 Example:
-560 | Subarray Sum Equals K | Hashing + Prefix Sum | Medium | 25-Mar | 28-Mar | 01-Apr | 15-Apr | Forgot prefix sum trick
+560 | Subarray Sum Equals K | Hashing + Prefix Sum | Medium |
+05-Apr | 08-Apr | 12-Apr | 19-Apr | Forgot prefix sum trick
+
 
 ================================================================
-SECTION 7 — WHAT COMPANIES EXPECT FOR 6-12 LPA
+SECTION 7 — WHAT COMPANIES EXPECT FOR 6-12 LPA (INDIA)
 ================================================================
 Company Type         DSA Level Expected
 -------------------  -----------------------------------------
@@ -302,13 +505,12 @@ Topics guaranteed to appear:
   MUST KNOW  : Arrays, Strings, Hashing, Two Pointers, Sliding Window
   IMPORTANT  : Trees, Recursion, Stack, Binary Search
   GOOD TO HAVE: Linked List, DP (Coin Change, LIS), Greedy
-  OPTIONAL   : Advanced Graphs, Hard DP, Trie, Segment Tree
+  OPTIONAL   : Basic Graphs, Trie, Bit Manipulation
+
 
 ================================================================
 SECTION 8 — NON-DSA PREP (Don't ignore this)
 ================================================================
-This is what most people forget and fail because of:
-
 1. PROJECTS (Very Important)
    - Have 2 solid projects you can explain end-to-end
    - Be ready: "What problem did it solve? What tech? What was hard?"
@@ -334,6 +536,7 @@ This is what most people forget and fail because of:
    - Put LeetCode profile if 200+ solved
    - Quantify project impact if possible
 
+
 ================================================================
 SECTION 9 — WEEKLY CHECKPOINT QUESTIONS
 ================================================================
@@ -346,8 +549,34 @@ Ask yourself every Sunday:
 
 If answer to Q5 is "just completing" — slow down immediately.
 
+
 ================================================================
-SECTION 10 — RESOURCES
+SECTION 10 — EMERGENCY FALLBACK (If You Fall Behind)
+================================================================
+If you miss days and fall behind pace:
+
+Minimum Survival List (70 problems that cover everything):
+  Arrays    : 1, 26, 121, 238, 53, 56, 75
+  2-Pointer : 167, 15, 11, 42
+  Hashing   : 242, 49, 347, 128, 560
+  Sliding W : 3, 424, 567, 76
+  BinSearch : 704, 153, 33, 74, 875
+  Stack     : 20, 155, 739, 84
+  Linked L  : 141, 19, 143, 23, 2
+  Trees     : 104, 226, 102, 98, 230, 105, 124, 236
+  Heap      : 215, 295
+  Backtrack : 78, 46, 39, 131, 22
+  Greedy    : 55, 45, 435, 134
+  DP        : 70, 198, 322, 300, 416, 1143, 5, 91
+  Graphs    : 200, 207, 133, 994
+  Design    : 146
+
+These 70 problems cover 90% of what you'll face in 6-12 LPA interviews.
+If short on time — nail these first.
+
+
+================================================================
+SECTION 11 — RESOURCES
 ================================================================
 LeetCode          : https://leetcode.com
 NeetCode Roadmap  : https://neetcode.io/roadmap  (best visual roadmap)
@@ -358,45 +587,22 @@ GeeksforGeeks     : Theory for CS Fundamentals
 Glassdoor         : Check company-specific interview questions
 
 YouTube Channels (ranked by usefulness):
-  1. NeetCode — best for patterns + intuition
-  2. Striver (TakeUForward) — best for Indian job context
-  3. Abdul Bari — best for algorithms theory
-  4. Aditya Verma — best for DP explanation
+  1. NeetCode         — best for patterns + intuition
+  2. Striver          — best for Indian job context
+  3. Abdul Bari       — best for algorithms theory
+  4. Aditya Verma     — best for DP explanation
 
-================================================================
-SECTION 11 — EMERGENCY FALLBACK (If You Fall Behind)
-================================================================
-If you miss days and fall behind pace:
-
-Minimum Survival List (200 problems that cover everything):
-  Arrays    : 1, 26, 121, 238, 53, 56, 75
-  2-Pointer : 167, 15, 11, 42
-  Hashing   : 242, 49, 347, 128, 560
-  Sliding W : 3, 424, 567, 76
-  BinSearch : 704, 153, 33, 74
-  Stack     : 20, 155, 739, 84
-  Linked L  : 141, 19, 143, 23, 2
-  Trees     : 104, 226, 102, 98, 230, 105, 124
-  Heap      : 215, 295
-  Backtrack : 78, 46, 39, 131
-  Greedy    : 55, 45, 435
-  DP        : 70, 198, 322, 300, 416, 1143, 5
-  Graphs    : 200, 207, 133
-
-These 70 problems cover 90% of what you'll face in 6-12 LPA interviews.
-If short on time — nail these first.
 
 ================================================================
 FINAL WORDS
 ================================================================
-You don't need to be perfect.
-You need to be consistent and honest.
+You don't need to be perfect. You need to be consistent and honest.
 
 Track mistakes, not just count.
 Revise, don't just grind.
 Explain out loud, don't just code silently.
 
-One focused month can genuinely change where you end up.
+71 focused days can genuinely change where you end up.
 Start today. Not tomorrow.
 
 Good luck.
