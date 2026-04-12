@@ -1,3 +1,5 @@
+package patterns.arrays;
+
 public class BestTimeToBuyAndSellStockII {
     /*
      * Problem : Best time to buy and sell stock II

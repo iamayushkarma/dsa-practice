@@ -1,3 +1,4 @@
+package patterns.arrays;
 
 public class MajorityElement {
     /*

@@ -1,3 +1,5 @@
+package patterns.arrays;
+
 public class RotateImage {
     /*
      * Problem : Rotate Image

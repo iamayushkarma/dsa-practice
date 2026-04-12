@@ -1,3 +1,5 @@
+package patterns.arrays;
+
 public class RemoveDuplicatesII {
     /*
      * Problem : Remove duplicates for sorted array II

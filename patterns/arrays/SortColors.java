@@ -1,3 +1,5 @@
+package patterns.arrays;
+
 import java.util.Arrays;
 
 public class SortColors {
