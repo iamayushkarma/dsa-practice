@@ -30,6 +30,8 @@ public class LongestConsecutiveSequence {
      * Time Complexity: O(n)
      * Space Complexity: O(n)
      */
+    // Given an unsorted array of integers nums, return the length of the longest
+    // consecutive elements sequence.
     public static int longestConsecutive(int[] arr) {
         HashSet<Integer> set = new HashSet<>();
         int maxSeq = 0;

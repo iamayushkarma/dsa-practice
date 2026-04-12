@@ -26,7 +26,7 @@ public class SpiralMatrix {
      * Time Complexity: O(m × n)
      * Space Complexity: O(1) (excluding output list)
      */
-
+    // Given an m x n matrix, return all elements of the matrix in spiral order.
     public static List<Integer> spiralMatrix(int[][] matrix) {
         List<Integer> list = new ArrayList<>();
 

@@ -37,6 +37,8 @@ public class ValidAnagram {
      * Time Complexity: O(n)
      * Space Complexity: O(1) (if using array) / O(n) (if using HashMap)
      */
+    // Given two strings s and t, return true if t is an anagram of s, and false
+    // otherwise.
     public static boolean isAnagram(String s, String t) {
         if (s.length() != t.length())
             return false;

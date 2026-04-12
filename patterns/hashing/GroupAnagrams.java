@@ -39,7 +39,8 @@ public class GroupAnagrams {
      * Time Complexity: O(n * k log k) (sorting approach)
      * Space Complexity: O(n)
      */
-
+    // Given an array of strings strs, group the anagrams together. You can return
+    // the answer in any order.
     public static List<List<String>> groupAnagrams(String[] strs) {
         Map<String, List<String>> map = new HashMap<>();
 

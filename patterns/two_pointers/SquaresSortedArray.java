@@ -46,6 +46,8 @@ public class SquaresSortedArray {
      * Time Complexity: O(n)
      * Space Complexity: O(n) (for result array)
      */
+    // Given an integer array nums sorted in non-decreasing order, return an array
+    // of the squares of each number sorted in non-decreasing order.
     public static int[] squaresSortedArray(int[] arr) {
         int n = arr.length;
         int[] res = new int[n];
