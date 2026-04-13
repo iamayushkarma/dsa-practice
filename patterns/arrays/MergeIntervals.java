@@ -66,7 +66,7 @@ public class MergeIntervals {
                 { 1, 3 },
                 { 2, 6 },
                 { 8, 10 },
-                { 15, 18 }
+                { 15, 17 }
         };
 
         int[][] result = mergeIntervals(arr);
