@@ -42,6 +42,14 @@ public class BullsAndCows {
      * Time Complexity: O(n)
      * Space Complexity: O(1) // only 10-size arrays
      */
+    // In this game, you have a secret number and your friend makes a guess. You
+    // need to compare both and give a hint. A bull means a digit is correct and in
+    // the same position in both strings. A cow means the digit exists in the secret
+    // number but is placed in the wrong position in the guess. Your task is to
+    // count how many bulls and cows are there and return the result in the format
+    // "xAyB", where x is the number of bulls and y is the number of cows. Duplicate
+    // digits can exist, so each match should be counted carefully.
+
     public static String bullsAndCows(String secret, String guess) {
         int[] f1 = new int[10];
         int[] f2 = new int[10];
