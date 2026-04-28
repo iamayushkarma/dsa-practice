@@ -81,7 +81,7 @@ public class PermutationString {
     public static void main(String[] args) {
 
         String s1 = "ab";
-        String s2 = "eidbaoooo";
+        String s2 = "eidbaoooooo";
         System.out.println("Is Permutation in String: " + checkInclusion(s1, s2));
     }
 }
