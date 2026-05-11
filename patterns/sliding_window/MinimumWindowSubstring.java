@@ -47,7 +47,7 @@ public class MinimumWindowSubstring {
      * initialization)
      * - Misinterpreted requirement by tracking only unique characters instead of
      * total count
-     * - This fails for duplicate characters in t (e.g., "AABC")
+     * - This fails for duplicate characters in t (e.g., "AABAC")
      *
      * Time Complexity: O(n + m) ≈ O(n)
      * Space Complexity: O(1) (since map size is at most 52 / 128 chars)
