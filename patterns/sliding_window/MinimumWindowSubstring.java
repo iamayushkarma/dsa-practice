@@ -101,7 +101,7 @@ public class MinimumWindowSubstring {
     }
 
     public static void main(String[] args) {
-        String s = "ADOBECODEBANDSC";
+        String s = "ADOBEEBANDSC";
         String t = "ABC";
         System.out.println("Minimum Window Substring: " + minWindow(s, t));
     }
