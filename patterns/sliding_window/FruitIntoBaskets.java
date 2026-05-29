@@ -45,6 +45,11 @@ public class FruitIntoBaskets {
      * Space Complexity: O(1)
      * (HashMap stores at most 3 fruit types at any time)
      */
+
+    // Given an array representing fruit types on trees arranged in a row, find the
+    // maximum number of fruits that can be collected from a continuous sequence of
+    // trees while carrying fruits in only two baskets, where each basket can hold
+    // only one type of fruit.
     public static int totalFruit(int[] fruits) {
         HashMap<Integer, Integer> map = new HashMap<>();
         int max_fruit = 0;
