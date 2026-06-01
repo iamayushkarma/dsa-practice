@@ -70,6 +70,6 @@ public class SearchInsertPosition {
         int[] nums = { 1, 3, 5, 6 };
         int target = 2;
 
-        System.out.println("Position: " + searchInsert(nums, target));
+        System.out.println("Position is: " + searchInsert(nums, target));
     }
 }
