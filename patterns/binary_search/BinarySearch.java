@@ -9,7 +9,7 @@ public class BinarySearch {
      * Pattern : Binary Search
      * Difficulty : Easy
      * Date Solved: __-__-____
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Approach:
      * Used binary search on the sorted array.
