@@ -9,7 +9,7 @@ public class GetEqualSubstringsWithinBudget {
      * Pattern : Sliding Window
      * Difficulty : Medium
      * Date Solved: __-__-____
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Approach:
      * Used variable-size sliding window.
