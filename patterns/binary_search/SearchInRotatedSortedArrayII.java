@@ -9,7 +9,7 @@ public class SearchInRotatedSortedArrayII {
      * Pattern : Binary Search on Rotated Array with Duplicates
      * Difficulty : Medium
      * Date Solved: 31-05-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Approach:
      * Used binary search on a rotated sorted array that may
