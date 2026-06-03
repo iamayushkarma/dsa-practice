@@ -9,7 +9,7 @@ public class SearchInRotatedSortedArray {
      * Pattern : Binary Search on Rotated Array
      * Difficulty : Medium
      * Date Solved: 31-05-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Approach:
      * Used binary search on the rotated sorted array.
