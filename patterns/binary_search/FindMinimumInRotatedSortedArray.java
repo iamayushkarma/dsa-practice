@@ -9,7 +9,7 @@ public class FindMinimumInRotatedSortedArray {
      * Pattern : Binary Search on Rotated Array
      * Difficulty : Medium
      * Date Solved: 31-05-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Approach:
      * Used binary search to locate the minimum element.
