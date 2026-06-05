@@ -9,7 +9,7 @@ public class CapacityToShipPackagesWithinDDays {
      * Pattern : Binary Search on Answer
      * Difficulty : Medium
      * Date Solved: 31-05-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Approach:
      * Used Binary Search on the answer (ship capacity).
