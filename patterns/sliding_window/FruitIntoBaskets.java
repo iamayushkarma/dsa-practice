@@ -11,7 +11,7 @@ public class FruitIntoBaskets {
      * Pattern : Sliding Window / Hashing
      * Difficulty : Medium
      * Date Solved: 29-May-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [✅] Day7 [ ] Day14
      *
      * My Approach:
      * Used sliding window with HashMap.
