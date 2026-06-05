@@ -9,7 +9,7 @@ public class SearchA2DMatrix {
      * Pattern : Binary Search on Matrix
      * Difficulty : Medium
      * Date Solved: 31-05-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Approach:
      * Used two levels of binary search.
