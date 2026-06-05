@@ -9,7 +9,7 @@ public class FindPeakElement {
      * Pattern : Binary Search on Unsorted Array
      * Difficulty : Medium
      * Date Solved: 31-05-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Approach:
      * Used binary search to locate a peak element.
