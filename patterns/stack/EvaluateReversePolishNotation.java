@@ -10,7 +10,7 @@ public class EvaluateReversePolishNotation {
      * Pattern : Stack
      * Difficulty : Medium
      * Date Solved: 04-Jun-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [✅] Day7 [ ] Day14
      *
      * My Approach:
      * Initially thought about converting the expression into
