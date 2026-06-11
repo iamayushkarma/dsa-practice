@@ -10,7 +10,7 @@ public class ValidParentheses {
      * Pattern : Stack
      * Difficulty : Easy
      * Date Solved: 04-Jun-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [✅] Day7 [ ] Day14
      *
      * My Approach:
      * Initially thought about counting opening and closing brackets,
