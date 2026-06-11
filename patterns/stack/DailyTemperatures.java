@@ -11,7 +11,7 @@ public class DailyTemperatures {
      * Pattern : Monotonic Decreasing Stack
      * Difficulty : Medium
      * Date Solved: 04-Jun-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [✅] Day7 [ ] Day14
      *
      * My Approach:
      * Initially thought about checking every future day
