@@ -11,7 +11,7 @@ public class FindAllAnagramsInString {
      * Pattern : Fixed Size Sliding Window / Frequency Count
      * Difficulty : Medium
      * Date Solved: 29-May-2026
-     * Revision : [✅] Day3 [✅] Day7 [ ] Day14
+     * Revision : [✅] Day3 [✅] Day7 [✅] Day14
      *
      * My Approach:
      * Used a fixed-size sliding window with two frequency arrays.
