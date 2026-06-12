@@ -1,4 +1,4 @@
-package patterns.monotonic_stack;
+package patterns.stack;
 
 import java.util.Arrays;
 import java.util.Stack;
