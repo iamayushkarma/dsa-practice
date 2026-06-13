@@ -9,7 +9,7 @@ public class SearchInsertPosition {
      * Pattern : Binary Search
      * Difficulty : Easy
      * Date Solved: 30-05-2026
-     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [✅] Day7 [✅] Day14
      *
      * My Approach:
      * Used binary search on the sorted array.
