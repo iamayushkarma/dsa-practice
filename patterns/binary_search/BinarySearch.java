@@ -8,8 +8,8 @@ public class BinarySearch {
      * https://leetcode.com/problems/binary-search/
      * Pattern : Binary Search
      * Difficulty : Easy
-     * Date Solved: __-__-____
-     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
+     * Date Solved: 30-May-2026
+     * Revision : [✅] Day3 [✅] Day7 [✅] Day14
      *
      * My Approach:
      * Used binary search on the sorted array.
