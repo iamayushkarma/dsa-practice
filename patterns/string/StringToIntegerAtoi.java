@@ -16,7 +16,7 @@ public class StringToIntegerAtoi {
      * was '+' or '-' to determine the sign. After that, I started reading digits
      * one by one, converting them into an integer using:
      *
-     *      number = number * 10 + digit
+     * number = number * 10 + digit
      *
      * Before adding each digit, I checked whether the next operation would
      * overflow the integer range. If overflow was detected, I immediately
