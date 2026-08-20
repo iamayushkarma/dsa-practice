@@ -10,7 +10,7 @@ public class LongestConsecutiveSequence {
      * Pattern : Hashing + Sequence Detection
      * Difficulty : Medium
      * Date Solved: 12-04-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Approach:
      * Stored all elements in a HashSet for O(1) lookup.
