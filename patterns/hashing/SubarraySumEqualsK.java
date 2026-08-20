@@ -10,7 +10,7 @@ public class SubarraySumEqualsK {
      * Pattern : Prefix Sum + HashMap
      * Difficulty : Medium
      * Date Solved: 12-04-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Approach:
      * Used a running prefix sum and a HashMap to store frequencies
