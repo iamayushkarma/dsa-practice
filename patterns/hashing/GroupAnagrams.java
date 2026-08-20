@@ -11,7 +11,7 @@ public class GroupAnagrams {
      * Pattern : Hashing
      * Difficulty : Medium
      * Date Solved: 09-04-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Approach:
      * I converted each string into a character array, sorted it,
