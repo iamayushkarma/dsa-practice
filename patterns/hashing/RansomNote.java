@@ -8,7 +8,7 @@ public class RansomNote {
      * Pattern : Hashing
      * Difficulty : Easy
      * Date Solved: 18-08-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Approach:
      * I used a frequency array of size 26 to store the number of available
