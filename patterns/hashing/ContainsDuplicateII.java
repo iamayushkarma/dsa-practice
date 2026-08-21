@@ -11,7 +11,7 @@ public class ContainsDuplicateII {
      * Pattern : Hashing
      * Difficulty : Easy
      * Date Solved: 18-08-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Approach:
      * I used a HashMap to store the most recent index of every number.
