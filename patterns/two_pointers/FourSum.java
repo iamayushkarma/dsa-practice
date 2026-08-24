@@ -10,7 +10,7 @@ public class FourSum {
      * Pattern : Two Pointers + Sorting
      * Difficulty : Medium
      * Date Solved: 08-Apr-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Approach:
      * First thought was brute force using 4 loops to check all combinations,
