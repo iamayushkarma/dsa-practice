@@ -10,7 +10,7 @@ public class TwoSumTwo {
      * Pattern : Two Pointers
      * Difficulty : Medium
      * Date Solved: 29-03-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * Optimal Approach:
      * Take two pointers i and j, place i at start of array and j at end the
