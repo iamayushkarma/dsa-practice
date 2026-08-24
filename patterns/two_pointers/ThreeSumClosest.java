@@ -11,7 +11,7 @@ public class ThreeSumClosest {
      * Pattern : Two Pointers
      * Difficulty : Medium
      * Date Solved: 21-08-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Approach:
      * First thought was brute force — try all possible triplets (i, j, k)
