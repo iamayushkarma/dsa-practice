@@ -8,7 +8,7 @@ public class BestTimeToBuyAndSellStockII {
      * Pattern : Greedy (Single Pass)
      * Difficulty : Easy
      * Date Solved: 05-04-2026
-     * Revision : [] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Approach:
      * First i use brute force approch, i used nested loops to solve the problem
