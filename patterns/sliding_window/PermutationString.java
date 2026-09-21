@@ -8,7 +8,7 @@ public class PermutationString {
      * Pattern : Sliding Window + Frequency Count (Hashing)
      * Difficulty : Medium
      * Date Solved: 18-Apr-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Approach:
      * Tried brute force by generating all permutations of s1 and checking in s2,
