@@ -9,7 +9,7 @@ public class KokoEatingBananas {
      * Pattern : Binary Search on Answer
      * Difficulty : Medium
      * Date Solved: 03-06-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Approach:
      * Used Binary Search on the eating speed.
