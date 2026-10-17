@@ -1,4 +1,4 @@
-package patterns.arrays;
+package patterns.arrays.matrix;
 
 import java.util.*;
 
@@ -10,7 +10,7 @@ public class SpiralMatrix {
      * Pattern : Matrix Traversal (Boundary Simulation)
      * Difficulty : Medium
      * Date Solved: 06-04-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Approach:
      * Used boundary pointers (top, bottom, left, right)

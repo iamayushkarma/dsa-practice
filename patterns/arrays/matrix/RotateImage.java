@@ -1,4 +1,4 @@
-package patterns.arrays;
+package patterns.arrays.matrix;
 
 public class RotateImage {
     /*
