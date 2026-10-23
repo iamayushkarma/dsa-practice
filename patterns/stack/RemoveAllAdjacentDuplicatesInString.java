@@ -126,31 +126,17 @@ public class RemoveAllAdjacentDuplicatesInString {
      */
 
     public static String removeDuplicates(String s) {
-
         Stack<Character> stack = new Stack<>();
-        StringBuilder res = new StringBuilder();
+        StringBuilder sb = new StringBuilder();
 
-        for (int i = 0; i < s.length(); i++) {
-
-            char ch = s.charAt(i);
-
-            if (stack.isEmpty()) {
-                stack.push(ch);
-            } else {
-
-                if (stack.peek() == ch) {
-                    stack.pop();
-                } else {
-                    stack.push(ch);
-                }
-            }
+        for(char ch : s.toCharArray()){
+            if(!stack.isEmpty() && stack.peek() == ch) stack.pop();
+            else stack.push(ch);
         }
 
-        while (!stack.isEmpty()) {
-            res.append(stack.pop());
-        }
+        for(char ch : stack) sb.append(ch);
 
-        return res.reverse().toString();
+        return sb.toString();
     }
 
     public static void main(String[] args) {
