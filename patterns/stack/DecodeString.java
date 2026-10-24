@@ -11,7 +11,7 @@ public class DecodeString {
      * Pattern : Stack
      * Difficulty : Medium
      * Date Solved : 11-June-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Approach:
      * Initially tried using a character stack and building
