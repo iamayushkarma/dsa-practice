@@ -11,7 +11,7 @@ public class AsteroidCollision {
      * Pattern : Stack
      * Difficulty : Medium
      * Date Solved : 11-June-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Approach:
      * Initially I thought of comparing the sum of two asteroids.
