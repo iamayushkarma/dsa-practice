@@ -12,7 +12,7 @@ public class NumberOfRecentCalls {
          * Pattern : Queue / Sliding Window
          * Difficulty : Easy
          * Date Solved: 12-Jun-2026
-         * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+         * Revision : [✅] Day3 [ ] Day7 [ ] Day14
          *
          * My Approach:
          * Store timestamps in a queue.
