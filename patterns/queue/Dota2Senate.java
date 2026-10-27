@@ -12,7 +12,7 @@ public class Dota2Senate {
      * Pattern : Queue Simulation
      * Difficulty : Medium
      * Date Solved: 12-Jun-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Approach:
      * Store indices of Radiant and Dire senators in separate queues.
@@ -76,9 +76,9 @@ public class Dota2Senate {
 
         Solution sol = new Solution();
 
-        System.out.println(sol.predictPartyVictory("RD"));      // Radiant
-        System.out.println(sol.predictPartyVictory("RDD"));     // Dire
-        System.out.println(sol.predictPartyVictory("RRDDD"));   // Radiant
-        System.out.println(sol.predictPartyVictory("DDRRR"));   // Dire
+        System.out.println(sol.predictPartyVictory("RD")); // Radiant
+        System.out.println(sol.predictPartyVictory("RDD")); // Dire
+        System.out.println(sol.predictPartyVictory("RRDDD")); // Radiant
+        System.out.println(sol.predictPartyVictory("DDRRR")); // Dire
     }
 }
