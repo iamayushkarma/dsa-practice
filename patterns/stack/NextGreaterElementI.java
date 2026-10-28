@@ -12,7 +12,7 @@ public class NextGreaterElementI {
      * Pattern : Monotonic Decreasing Stack + HashMap
      * Difficulty : Easy
      * Date Solved: 10-Jun-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Initial Approach:
      * Tried applying the standard Next Greater Element
