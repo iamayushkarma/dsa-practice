@@ -12,7 +12,7 @@ public class NextGreaterElementII {
      * Pattern : Monotonic Decreasing Stack + Circular Array
      * Difficulty : Medium
      * Date Solved: 10-Jun-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Initial Approach:
      * Tried solving it exactly like the standard
