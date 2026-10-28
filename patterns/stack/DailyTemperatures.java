@@ -11,7 +11,7 @@ public class DailyTemperatures {
      * Pattern : Monotonic Decreasing Stack
      * Difficulty : Medium
      * Date Solved: 04-Jun-2026
-     * Revision : [✅] Day3 [✅] Day7 [ ] Day14
+     * Revision : [✅] Day3 [✅] Day7 [✅] Day14
      *
      * My Approach:
      * Initially thought about checking every future day
@@ -69,25 +69,19 @@ public class DailyTemperatures {
 
     public static int[] dailyTemperatures(int[] temperatures) {
         int n = temperatures.length;
-        int[] res = new int[n];
 
-        Stack<int[]> stack = new Stack<>(); // int[] -> [temperature, index]
+        Stack<Integer> stack = new Stack<>();
+        int[] result = new int[n];
 
         for (int i = 0; i < n; i++) {
+            while (!stack.isEmpty() && temperatures[i] > temperatures[stack.peek()]) {
+                int prev = stack.pop();
 
-            while (!stack.isEmpty() &&
-                    temperatures[i] > stack.peek()[0]) {
-
-                int[] prev = stack.pop();
-                int prevIndex = prev[1];
-
-                res[prevIndex] = i - prevIndex;
+                result[prev] = i - prev;
             }
-
-            stack.push(new int[] { temperatures[i], i });
+            stack.push(i);
         }
-
-        return res;
+        return result;
     }
 
     public static void main(String[] args) {
