@@ -8,7 +8,7 @@ public class LargestRectangleInHistogram {
      * Pattern : Monotonic Increasing Stack
      * Difficulty : Hard
      * Date Solved: 10-Jun-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Initial Approach:
      * Calculated Previous Smaller Element (PSE)
