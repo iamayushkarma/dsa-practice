@@ -12,7 +12,7 @@ public class OnlineStockSpan {
      * Pattern : Monotonic Stack (Decreasing Stack)
      * Difficulty : Medium
      * Date Solved : 11-Jun-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * ---------------------------------------------------------
      *
