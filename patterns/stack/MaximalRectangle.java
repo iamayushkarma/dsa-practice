@@ -9,7 +9,7 @@ public class MaximalRectangle {
      * Pattern : Histogram + Monotonic Increasing Stack
      * Difficulty : Hard
      * Date Solved: 10-Jun-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * Prerequisite:
      * Largest Rectangle in Histogram (#84)
