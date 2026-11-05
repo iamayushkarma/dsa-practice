@@ -69,17 +69,24 @@ public class SwapNodesInPairs {
         assert pairResult.next == pairFirst;
         assert pairResult.next.next == null;
 
-        ListNode head1 = new ListNode(1,
-                new ListNode(2,
-                        new ListNode(3,
-                                new ListNode(4))));
+        ListNode first = new ListNode(1);
+        ListNode second = new ListNode(2);
+        ListNode third = new ListNode(3);
+        ListNode fourth = new ListNode(4);
+        first.next = second;
+        second.next = third;
+        third.next = fourth;
 
-        ListNode result1 = swapPairs(head1);
+        ListNode result1 = swapPairs(first);
 
         assert result1.val == 2;
+        assert result1 == second;
         assert result1.next.val == 1;
+        assert result1.next == first;
         assert result1.next.next.val == 4;
+        assert result1.next.next == fourth;
         assert result1.next.next.next.val == 3;
+        assert result1.next.next.next == third;
         assert result1.next.next.next.next == null;
 
         ListNode head2 = new ListNode(1,
