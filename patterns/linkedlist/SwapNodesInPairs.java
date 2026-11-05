@@ -89,19 +89,24 @@ public class SwapNodesInPairs {
         assert result1.next.next.next == third;
         assert result1.next.next.next.next == null;
 
-        ListNode head2 = new ListNode(1,
-                new ListNode(2,
-                        new ListNode(3)));
+        ListNode oddFirst = new ListNode(1);
+        ListNode oddSecond = new ListNode(2);
+        ListNode oddThird = new ListNode(3);
+        oddFirst.next = oddSecond;
+        oddSecond.next = oddThird;
 
-        ListNode result2 = swapPairs(head2);
+        ListNode result2 = swapPairs(oddFirst);
 
         assert result2.val == 2;
+        assert result2 == oddSecond;
         assert result2.next.val == 1;
+        assert result2.next == oddFirst;
         assert result2.next.next.val == 3;
+        assert result2.next.next == oddThird;
         assert result2.next.next.next == null;
 
         ListNode head3 = new ListNode(1);
-        assert swapPairs(head3).val == 1;
+        assert swapPairs(head3) == head3;
         assert swapPairs(null) == null;
     }
 
