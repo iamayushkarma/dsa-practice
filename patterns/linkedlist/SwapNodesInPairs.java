@@ -59,10 +59,14 @@ public class SwapNodesInPairs {
     }
 
     public static void main(String[] args) {
-        ListNode pair = new ListNode(1, new ListNode(2));
-        ListNode pairResult = swapPairs(pair);
+        ListNode pairFirst = new ListNode(1);
+        ListNode pairSecond = new ListNode(2);
+        pairFirst.next = pairSecond;
+        ListNode pairResult = swapPairs(pairFirst);
         assert pairResult.val == 2;
+        assert pairResult == pairSecond;
         assert pairResult.next.val == 1;
+        assert pairResult.next == pairFirst;
         assert pairResult.next.next == null;
 
         ListNode head1 = new ListNode(1,
