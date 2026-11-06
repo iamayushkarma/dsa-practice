@@ -40,9 +40,6 @@ public class SwapNodesInPairs {
      */
 
     public static ListNode swapPairs(ListNode head) {
-        if (head == null)
-            return head;
-
         ListNode dummy = new ListNode(0, head);
         ListNode prev = dummy;
         ListNode curr = head;
