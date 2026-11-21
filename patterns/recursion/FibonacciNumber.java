@@ -9,7 +9,7 @@ public class FibonacciNumber {
      * Pattern : Recursion
      * Difficulty : Easy
      * Date Solved: 13-June-2026
-     * Revision : [ ] Day3 [ ] Day7 [ ] Day14
+     * Revision : [✅] Day3 [ ] Day7 [ ] Day14
      *
      * My Approach:
      * Used recursion based on the Fibonacci definition.
